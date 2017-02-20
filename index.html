@@ -679,6 +679,13 @@
           return false;
       }); 
     </script>
+
+    <script type="text/javascript">
+      $(".navbar-nav li a").click(function(event) {
+        if (!$(this).parent().hasClass('dropdown'))
+        $(".navbar-collapse").collapse('hide');
+      });
+    </script>
     <!-- Bootstrap core JS -->
 
     <!-- Can place script tags with JavaScript files here -->

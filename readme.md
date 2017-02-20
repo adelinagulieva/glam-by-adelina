@@ -1,12 +1,6 @@
 Glam by Adelina to do list:
 
-Fix Nav Spacing, colors, Hamburger Menu, responsive issues
-
-Make Hamburger retract when selection made
-
-Write Description for 3) Award Winning
-
-Connect Carousel to Instagram (Latest)
+Create Mobile version Contact Landing
 
 Link Voyage ATL Article
 
@@ -31,3 +25,7 @@ Use couple wedding photo back
 Make sure Scheduler works on all devices and screen sizes; use Javascript to define limits for screens
 
 Add tooltips to all buttons
+
+Write Description for 3) Award Winning
+
+Connect Carousel to Instagram (Latest)
