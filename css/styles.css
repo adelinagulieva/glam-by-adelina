@@ -107,6 +107,11 @@ p, li {
 	border-color: white;
 }
 
+.feature a {
+	text-decoration: none;
+	color: white;
+}
+
 /*Landing*/
 
 .jumbotron {
@@ -115,6 +120,7 @@ p, li {
   min-height: 100vh;
   padding: 0;
 }
+
 
 @media (max-width: 768px) {
 

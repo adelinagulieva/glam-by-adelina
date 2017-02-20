@@ -1,10 +1,10 @@
 Glam by Adelina to do list:
 
-Create Mobile version Contact Landing
-
 Link Voyage ATL Article
 
 Apply Javascript to do 4 slide in reviews
+
+Link Yelp reviews to slide
 
 Change Meet your Artist Photo, Description to include Awards
 
