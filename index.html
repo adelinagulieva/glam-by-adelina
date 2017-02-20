@@ -37,7 +37,7 @@
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container-fluid nav-bar-desktop">
         <div class="navbar-header">
-          <a class="navbar-brand" id="logo" href="#">
+          <a class="navbar-brand" id="logo" href="#landing">
           Glam by Adelina
           </a>
           <button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -50,24 +50,24 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Portfolio</li>
-            <li>Pricing</li>
-            <li>Booking</li>
-            <li>Blog</li>
-            <li>Contact</li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#tools">Tools</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#classes">Classes</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#booking">Booking</a></li>
           </ul>
         </div> <!-- nav -->
       </div> <!-- end nav container-->
     </nav><!-- End Navigation-->
 
-    <!-- Link all Social Media and Booking Icons
-    Write Description for 3) Award Winning -->
+    <!-- Write Description for 3) Award Winning -->
 
-    <div class="jumbotron">
-      <div class="gray-overlay">
+    <div class="jumbotron" id="landing">
+      <div class="gray-overlay anchor">
         <div class="container landing-container">
           <!-- Mobile Version -->
           <div class="visible-xs text-center">
@@ -124,7 +124,7 @@
     <!-- Connect Carousel to Instagram (Latest) -->
 
     <!-- Home -->
-    <div class="container home text-center">
+    <div class="container home text-center anchor" id="home">
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-4">
@@ -158,8 +158,8 @@
     <!-- Apply Javascript to do 4 slide in reviews -->
 
     <!-- Reviews -->
-    <div class="container-fluid section-image reviews">
-      <div class="gray-overlay">
+    <div class="container-fluid section-image reviews" id="reviews">
+      <div class="gray-overlay anchor">
         <h1 class="text-center">Reviews</h1>
         <p class="text-center">See what the other girls are saying</p>
         <p class="text-center">Copy history from profile site</p>
@@ -169,7 +169,7 @@
     <!-- Change Meet your Artist Photo, Description to include Awards -->
 
     <!-- About -->
-    <div class="container about">
+    <div class="container about anchor" id="about">
       <h1 class="text-center">Meet Your Artist</h1>
       <div class="row">
         <div class="col-sm-6 text-center">
@@ -193,8 +193,8 @@
     <!-- Come up with List, find Icons -->
 
     <!-- Tools -->
-    <div class="container-fluid section-image tools">
-      <div class="gray-overlay">
+    <div class="container-fluid section-image tools" id="tools">
+      <div class="gray-overlay anchor">
         <h1 class="text-center">The Tools of the Trade</h1>
         <div class="container"> 
           <div class="row">
@@ -230,7 +230,7 @@
      -->
 
     <!-- Services -->
-    <div class="container services text-center">
+    <div class="container services text-center anchor" id="services">
       <h1>Services</h1>
       <p>Adelina can easily customize services to meet your needs. Check out what's available and let me know what you need!</p>
       <!-- Hover Pills -->
@@ -485,9 +485,9 @@
     <!-- Replace with Classes -->
 
     <!-- Pricing/Classes -->
-    <div class="container-fluid section-image pricing">
-      <div class="gray-overlay text-center">
-        <h1>Pricing</h1>
+    <div class="container-fluid section-image pricing" id="classes">
+      <div class="gray-overlay anchor text-center">
+        <h1>Classes</h1>
         <div class="row">
           <div class="col-xs-6 col-sm-3">
             <div class="price-block">
@@ -564,61 +564,62 @@
     <!-- Plain background -->
 
     <!-- Blog -->
-    <div class="container-fluid section-image blog text-center">
-      <div class="gray-overlay">
-        <h1>Blog</h1>
-        <div class="row">
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <img src="img/koshka.jpg" alt="...">
-              <div class="caption">
-                <h3>Thumbnail label</h3>
-                <p>...</p>
-                <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-              </div>
+    <div class="container blog text-center anchor" id="blog">
+      <h1>Blog</h1>
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="img/koshka.jpg" alt="...">
+            <div class="caption">
+              <h3>Thumbnail label</h3>
+              <p>...</p>
+              <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <img src="img/koshka.jpg" alt="...">
-              <div class="caption">
-                <h3>Thumbnail label</h3>
-                <p>...</p>
-                <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-              </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="img/koshka.jpg" alt="...">
+            <div class="caption">
+              <h3>Thumbnail label</h3>
+              <p>...</p>
+              <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <img src="img/koshka.jpg" alt="...">
-              <div class="caption">
-                <h3>Thumbnail label</h3>
-                <p>...</p>
-                <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-              </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="img/koshka.jpg" alt="...">
+            <div class="caption">
+              <h3>Thumbnail label</h3>
+              <p>...</p>
+              <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
             </div>
           </div>
         </div>
       </div>
+
     </div>
 
     <!-- Do the whole contact form, assign to adelina@glambyadelina.com and aron@glambyadelina.com, use couple wedding photo back-->
 
     <!-- Contact -->
-    <div class="container-fluid section-image contact text-center">
-      <h1>Subscribe for Special Offers</h1>
-      <p>Stay posted for special discounts, giveaways, and other exciting opportunities</p>
-      <form>
-        <input class="clear-field" type="text" name="name" placeholder="Name">
-        <input class="clear-field" type="text" name="email" placeholder="Email"><br>
-        <input type="submit" value="Submit">
-      </form>
+    <div class="container-fluid section-image contact text-center" id="contact">
+      <div class="gray-overlay anchor">
+        <h1>Subscribe for Special Offers</h1>
+        <p>Stay posted for special discounts, giveaways, and other exciting opportunities</p>
+        <form>
+          <input class="clear-field" type="text" name="name" placeholder="Name">
+          <input class="clear-field" type="text" name="email" placeholder="Email"><br>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
     </div>
 
     <!-- Make sure it works on all devices and screen sizes; use Javascript to define limits for screens -->
 
     <!-- Booking -->
-    <div class="container booking text-center">
+    <div class="container booking text-center anchor" id="booking">
       <div class="wrapper">
         <div class="hide-logo"><h1>Booking</h1></div>
         <iframe id="setmore" src="https://adelina.setmore.com/"></iframe>

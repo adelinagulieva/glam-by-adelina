@@ -76,7 +76,7 @@ p, li {
 }
 
 .landing-container {
-	padding-top: 20vh;
+	margin-top: 5vh;
 	color: white;
 }
 
@@ -110,11 +110,6 @@ p, li {
 	max-height: 100vh;
 	padding: 0;
 	color: white;
-}
-
-.section-image h1 {
-	margin-top: 0;
-	padding-top: 70px;
 }
 
 /*Reviews*/
@@ -279,6 +274,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
   position: relative;
   z-index: 1;
   display: inline-block;
+  margin-top: 2.5em;
 }
 
 .hide-logo {
@@ -311,4 +307,19 @@ footer {
   color: white;
   padding-top: 20px;
   padding-left: 5%;
+}
+
+/*Override*/
+
+.anchor {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+h1 {
+	margin: 1em;
+}
+
+.wrapper h1 {
+	margin-top: 0;
 }
