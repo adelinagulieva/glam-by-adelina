@@ -1,10 +1,8 @@
 Glam by Adelina to do list:
 
-Connect Nav links to anchors
+Make Nav links scroll to anchors
 
 Fix Nav Spacing, colors, Hamburger Menu, responsive issues
-
-Make Nav links scroll to anchors
 
 Make Hamburger retract when selection made
 

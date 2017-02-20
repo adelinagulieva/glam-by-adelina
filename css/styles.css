@@ -95,6 +95,11 @@ p, li {
 	transition: 0.2s;
 }
 
+.carousel-indicators {
+	padding-top: 20px;
+	position: relative;
+}
+
 .home {
 	background-color: white;
 }
