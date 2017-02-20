@@ -1,7 +1,5 @@
 Glam by Adelina to do list:
 
-Link all Social Media and Booking Icons
-
 Make Nav links scroll to anchors
 
 Write Description for 3) Award Winning

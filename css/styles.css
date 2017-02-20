@@ -80,7 +80,8 @@ p, li {
 	color: white;
 }
 
-.jumbotron i {
+.jumbotron a i{
+	color: white;
 	font-size: 8vw;
 	margin-right: 2vw;
 	margin-left: 2vw;
@@ -88,7 +89,8 @@ p, li {
 	transition: 0.2s;
 }
 
-.jumbotron i:hover {
+.jumbotron a i:hover {
+	color: white;
 	opacity: 1;
 	transition: 0.2s;
 }
