@@ -94,9 +94,35 @@
         <div class="container landing-container">
           <!-- Mobile Version -->
           <div class="visible-xs text-center">
-            <h1>Atlanta's Newest Makeup Artist</h1>
-            <p>Makeup is often a tedius ritual--but for Adelina, it's more like painting a portrait. Now, Atlanta has a brand new source of inspiration for all things makeup and hair.</p>
-          </div>
+            <h1>Adelina Eidelman</h1> 
+            <h2>Makeup Artist and Hairstylist</h2>
+            <!-- Contact Info List -->
+            <ul class="text-left">
+              <li>
+                <a href="tel:678-231-3108"><i class="fa fa-phone" aria-hidden="true"></i> 678-231-3108</a>
+              </li>
+              <li>
+                <a href="mailto:adelina@glambyadelina.com?subject=Makeup%20and%20hair%20question%20"><i class="fa fa-envelope-o" aria-hidden="true"></i> adelina@glambyadelina.com</a>
+              </li>
+              <li><a href="https://www.instagram.com/adelina_eidelman/" target="_blank">
+                  <i class="fa fa-instagram" aria-hidden="true"></i> Instagram
+                </a>
+              </li>  
+              <li>
+                <a href="https://www.facebook.com/glambyadelina" target="_blank">
+                  <i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook
+                </a>
+              </li>
+              <li>
+                <a href="https://www.yelp.com/biz/glam-by-adelina-atlanta" target="_blank">
+                  <i class="fa fa-yelp" aria-hidden="true"></i> Yelp
+                </a>
+              </li>
+            </ul>
+            <!-- Booking and Availability -->
+            <h3>Available 8AM - 10PM</h3>
+            <a href="https://adelina.setmore.com/" target="_blank"><button type="button" class="btn btn-primary"><i class="fa fa-calendar" aria-hidden="true"></i> Book Now</button></a>
+          </div> <!-- End Mobile Version -->
           <!-- Main Version -->
           <div class="hidden-xs">
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -122,24 +148,24 @@
                 <li data-target="#myCarousel" data-slide-to="2"></li>
               </ol>
             </div>
-          </div>
-          <!-- Social Media -->
-          <div class="row">
-            <div class="text-center">
-              <a href="https://adelina.setmore.com/" target="_blank">
-                <i class="fa fa-calendar" aria-hidden="true"></i>
-              </a>
-              <a href="https://www.instagram.com/adelina_eidelman/" target="_blank">
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-              </a>
-              <a href="https://www.facebook.com/glambyadelina" target="_blank">
-                <i class="fa fa-facebook-square" aria-hidden="true"></i>
-              </a>
-              <a href="https://www.yelp.com/biz/glam-by-adelina-atlanta" target="_blank">
-                <i class="fa fa-yelp" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
+            <!-- Social Media -->
+            <div class="row">
+              <div class="text-center">
+                <a href="https://adelina.setmore.com/" target="_blank">
+                  <i class="fa fa-calendar" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/adelina_eidelman/" target="_blank">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.facebook.com/glambyadelina" target="_blank">
+                  <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.yelp.com/biz/glam-by-adelina-atlanta" target="_blank">
+                  <i class="fa fa-yelp" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div> <!-- end social media -->
+          </div>   
         </div>
       </div><!-- /container -->
     </div><!-- /jumbotron -->
@@ -154,19 +180,16 @@
           <h2>Bridal Makeup And Hair</h2>
           <p>Treat yourself to the best makeup and hair service, carefully customized to make your dreams come true on your special day--from the comfort of the bride's home.</p>
           <img class="home-image" src="img/homebridal.jpg">
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div><!-- /col -->
         <div class="col-md-4">
           <h2>Fashion, Film, and Beyond</h2>
           <p>Show the lens some love with perfect skin and hair. I have all the tools required to work on set, and I will work seamlessly with the rest of your editorial, wardrobe, and creative team.</p>
           <img class="home-image" src="img/homefashion.jpg">
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
        </div><!-- /col -->
         <div class="col-md-4">
           <h2>Special Night Out</h2>
           <p>Add some sparkle to your night. Get that celebrity feeling and look fabulous!  You and your friends can pop the champagne as I match your hair and makeup to your gorgeous outfits.</p>
           <img class="home-image" src="img/homespecial.jpg">
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div><!-- /col -->
       </div><!-- /row -->
       <h2 class="text-center">Latest Work</h2>
@@ -679,7 +702,6 @@
           return false;
       }); 
     </script>
-
     <script type="text/javascript">
       $(".navbar-nav li a").click(function(event) {
         if (!$(this).parent().hasClass('dropdown'))
