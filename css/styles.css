@@ -121,6 +121,10 @@ p, li {
   padding: 0;
 }
 
+.jumbotron .btn-primary {
+	font-size: 15px;
+	border-color: white;
+}
 
 @media (max-width: 768px) {
 
@@ -132,22 +136,23 @@ p, li {
 	}
 
 	.jumbotron h1 {
+		font-size: 30px;
 		margin: 0;
+	}
+
+	.jumbotron h2 {
+		font-size: 25px;
 	}
 
 	.jumbotron ul {
 		list-style-type: none;
-		margin-left: 6vw;
 		margin-top: 20px;
+		padding-left: 5px;
 	}
 
 	.jumbotron li a {
 		color: white;
-		font-size: 3vh;
-	}
-
-	.jumbotron .btn-primary {
-		font-size: 3vh;
+		font-size: 20px;
 	}
 }
 
@@ -180,6 +185,12 @@ p, li {
 .landing-container {
 	margin-top: 5vh;
 	color: white;
+}
+
+@media (max-width: 768px) {
+	.landing-container {
+		width: 372px;
+	}
 }
 
 
