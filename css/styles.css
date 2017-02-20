@@ -58,6 +58,51 @@ p, li {
   background-color: #44166a;
 }
 
+.navbar-fixed-top .navbar-collapse {
+	max-height: 100vh;
+}
+
+#logo {
+	padding-top: 22px;
+	padding-left: 5vw;
+}
+
+.nav li a {
+	padding: 25px 10px;
+}
+
+@media (min-width: 943px) {
+	.nav li a {
+		padding: 25px 20px;
+	}
+}
+
+@media (min-width: 1170px) {
+	.nav li a {
+		padding: 25px 30px;
+	}
+}
+
+.nav li {
+	padding: 0;
+}
+
+.icon-bar {
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+	color: #44166a;
+	background-color: white;
+	border: 1px solid #44166a;
+}
+
+.navbar-inverse .navbar-toggle {
+	margin-top: 13px;
+	border-color: white;
+}
+
 /*Landing*/
 
 .jumbotron {
