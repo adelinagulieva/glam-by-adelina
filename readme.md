@@ -2,10 +2,6 @@
 
 ## JavaScript/jQuery
 
-* Link Yelp reviews to slide
-
-* Apply Javascript to do 4 slide in reviews
-
 * 36 Portfolio Pics (12 each, already have 9 each)
 
 * Write Javascript to resize photos automatically, display
