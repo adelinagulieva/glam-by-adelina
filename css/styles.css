@@ -91,7 +91,7 @@ p, li {
 	padding: 25px 10px;
 }
 
-@media (min-width: 943px) {
+@media (min-width: 950px) {
 	.nav li a {
 		padding: 25px 20px;
 	}
@@ -250,6 +250,13 @@ p, li {
   background-attachment: fixed;
 }
 
+.tools li a {
+ 	color: white;
+}
+
+.tool-img {
+	width: 100%;
+}
 /*Services*/
 
 .nav-pills a {
@@ -283,7 +290,7 @@ p, li {
 	height: auto;
 }
 
-/*specials*/
+/*Specials*/
 
 .price-block {
 	background-color: #44166a;

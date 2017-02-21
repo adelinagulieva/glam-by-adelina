@@ -1,16 +1,14 @@
 # Glam by Adelina to do list
 
-## Once Adelina is done
+* Color overlay for other 8 Icons
 
-* Color overlay for Icons
+* Correct min-height of tools section div and overlay to prevent overlay from going into next section
 
-* Descriptions for Classes
+* Descriptions for Specials
 
 ## JavaScript/jQuery
 
-* 36 Portfolio Pics (12 each, already have 9 each)
-
-* Write Javascript to resize photos automatically, display
+* 36 modal Portfolio Pics (12 each) in Services
 
 * Connect Carousel to Instagram (Latest)
 
@@ -31,3 +29,9 @@
 * Submit for review to CF people
 
 * Write nicer Readme.MD
+
+## Icebox
+
+* Canvas erase model picture before and after at landing (use jQuery erase)
+
+* Stylize and repaste Yelp reviews with link to avoid loading/framing issues
