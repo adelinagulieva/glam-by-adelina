@@ -1,33 +1,29 @@
-Glam by Adelina to do list:
+# Glam by Adelina to do list
 
-Bootstrap:
+## JavaScript/jQuery
 
-Add tooltips to all buttons
+* Link Yelp reviews to slide
 
-JavaScript/jQuery:
+* Apply Javascript to do 4 slide in reviews
 
-Link Yelp reviews to slide
+* 36 Portfolio Pics (12 each, already have 9 each)
 
-Apply Javascript to do 4 slide in reviews
+* Write Javascript to resize photos automatically, display
 
-36 Portfolio Pics (12 each, already have 9 each)
+* Connect Carousel to Instagram (Latest)
 
-Write Javascript to resize photos automatically, display
+* Make sure Scheduler works on all devices and screen sizes; use Javascript to define limits for screens
 
-Connect Carousel to Instagram (Latest)
+## Other (See CF)
 
-Make sure Scheduler works on all devices and screen sizes; use Javascript to define limits for screens
+* Do the whole contact form, assign to adelina@glambyadelina.com and aron@glambyadelina.com
 
-Other (See CF):
+## Once Adelina is done
 
-Do the whole contact form, assign to adelina@glambyadelina.com and aron@glambyadelina.com
+* Write Description for 3) Award Winning
 
-Once Adelina is done:
+* Change Meet your Artist Photo, Description to include Awards
 
-Write Description for 3) Award Winning
+* Come up with list for Tools, find Icons
 
-Change Meet your Artist Photo, Description to include Awards
-
-Come up with list for Tools, find Icons
-
-Descriptions for Classes
+* Descriptions for Classes
