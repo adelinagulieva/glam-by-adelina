@@ -131,7 +131,6 @@ p, li {
 	.jumbotron {
   background-image: url("../img/mobilelanding.jpg");
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-position: center; 
 	}
 
@@ -178,10 +177,6 @@ p, li {
 
 }
 
-.jumbotron p {
-	font-size: 2.4vw;
-}
-
 .landing-container {
 	margin-top: 5vh;
 	color: white;
@@ -204,9 +199,9 @@ p, li {
 }
 
 #myCarousel {
-	padding-left: 10vw;
-	padding-right: 10vw;
-	min-height: 27vw;
+	padding-left: 7vw;
+	padding-right: 7vw;
+	min-height: 30vw;
 }
 
 .section-image {
