@@ -2,7 +2,7 @@
 
 ## Once Adelina is done
 
-* Come up with list for Tools, find Icons
+* Color overlay for Icons
 
 * Descriptions for Classes
 
