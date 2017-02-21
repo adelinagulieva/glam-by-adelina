@@ -1,7 +1,5 @@
 Glam by Adelina to do list:
 
-Use couple wedding photo back
-
 Bootstrap:
 
 Add tooltips to all buttons

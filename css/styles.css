@@ -42,6 +42,16 @@ p, li {
 
 .btn-primary {
 	background-color: #44166a;
+	border-color: #44166a;
+	font-size: 20px;
+	transition: 0.2s;
+}
+
+.btn-primary:hover {
+	background-color: white;
+	border-color: #44166a;
+	color: #44166a;
+	transition: 0.2s;
 }
 
 /*Navbar*/
@@ -123,11 +133,6 @@ p, li {
   padding: 0;
 }
 
-.jumbotron .btn-primary {
-	font-size: 15px;
-	border-color: white;
-}
-
 @media (max-width: 768px) {
 
 	.jumbotron {
@@ -162,7 +167,7 @@ p, li {
 	font-size: 4.5vw;
 	}
 
-	.jumbotron a i{
+	.social-media a i{
 	color: white;
 	font-size: 8vw;
 	margin-right: 2vw;
@@ -171,7 +176,7 @@ p, li {
 	transition: 0.2s;
 	}
 
-	.jumbotron a i:hover {
+	.social-media a i:hover {
 		color: white;
 		opacity: 1;
 		transition: 0.2s;
@@ -203,7 +208,7 @@ p, li {
 #myCarousel {
 	padding-left: 7vw;
 	padding-right: 7vw;
-	min-height: 30vw;
+/*	min-height: 30vw;*/
 }
 
 .section-image {

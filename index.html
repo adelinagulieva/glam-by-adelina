@@ -120,7 +120,7 @@
               </li>
             </ul>
             <!-- Booking and Availability -->
-            <h3>Available 8AM - 10PM</h3>
+            <h3>Available 7AM - 10PM</h3>
             <a href="https://adelina.setmore.com/" target="_blank"><button type="button" class="btn btn-primary"><i class="fa fa-calendar" aria-hidden="true"></i> Book Now</button></a>
           </div> <!-- End Mobile Version -->
           <!-- Main Version -->
@@ -149,11 +149,8 @@
               </ol>
             </div>
             <!-- Social Media -->
-            <div class="row">
+            <div class="row social-media">
               <div class="text-center">
-                <a href="https://adelina.setmore.com/" target="_blank">
-                  <i class="fa fa-calendar" aria-hidden="true"></i>
-                </a>
                 <a href="https://www.instagram.com/adelina_eidelman/" target="_blank">
                   <i class="fa fa-instagram" aria-hidden="true"></i>
                 </a>
@@ -166,11 +163,17 @@
               </div>
             </div> <!-- end social media -->
           </div> <!-- End Main Version --> 
-          <div class="text-center feature"><!-- Voyage ATL Link -->
+          <!-- Voyage ATL Link -->
+          <div class="text-center feature">
             <a href="http://voyageatl.com/interview/meet-adelina-eidelman-of-glam-by-adelina-in-buckhead/" target="_blank">
               <h3>Featured in <img src="http://voyageatl.com/wp-content/uploads/2016/07/atl-small.png"></h3>
             </a> 
           </div>
+          <!-- Booking Button -->
+          <div class="booking-btn text-center hidden-xs">       
+              <h3>Available 7AM - 10PM</h3>
+              <a href="#booking"><button type="button" class="btn btn-primary"><i class="fa fa-calendar" aria-hidden="true"></i> Book Now</button></a>
+            </div>
         </div>
       </div><!-- /container -->
     </div><!-- /jumbotron -->
@@ -530,6 +533,10 @@
           </div>
         </div>
       </div>
+      <div class="hidden-xs booking-btn">        
+        <h3>Available 7AM - 10PM</h3>
+        <a href="#booking"><button type="button" class="btn btn-primary"><i class="fa fa-calendar" aria-hidden="true"></i> Book Now</button></a>
+      </div>
     </div>
 
     <!-- Replace with Classes -->
@@ -610,8 +617,6 @@
         </div>       
       </div>
     </div>
-
-    <!-- Plain background -->
 
     <!-- Blog -->
     <div class="container blog text-center anchor" id="blog">
@@ -697,6 +702,30 @@
     <script type="text/javascript">
       var $root = $('html, body');
       $('.glambyadelina a').click(function() {
+          var href = $.attr(this, 'href');
+          $root.animate({
+              scrollTop: $(href).offset().top
+          }, 500, function () {
+              window.location.hash = href;
+          });
+          return false;
+      }); 
+    </script>
+    <script type="text/javascript">
+      var $root = $('html, body');
+      $('.glambyadelina a').click(function() {
+          var href = $.attr(this, 'href');
+          $root.animate({
+              scrollTop: $(href).offset().top
+          }, 500, function () {
+              window.location.hash = href;
+          });
+          return false;
+      }); 
+    </script>
+    <script type="text/javascript">
+      var $root = $('html, body');
+      $('.booking-btn a').click(function() {
           var href = $.attr(this, 'href');
           $root.animate({
               scrollTop: $(href).offset().top
