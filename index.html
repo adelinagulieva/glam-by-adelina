@@ -71,7 +71,7 @@
               <a href="#services">Services</a>
             </li>
               <li class="hidden-xs">
-                <a href="#classes">Classes</a>
+                <a href="#specials">Specials</a>
               </li>
             <li>
               <a href="#blog">Blog</a>
@@ -124,7 +124,7 @@
               <div class="carousel-inner" role="listbox">
                 <div class="item active text-center">
                   <h1>Atlanta's New Makeup Artist</h1>
-                  <p>Makeup is often a tedius, but for Adelina, it's like painting a portrait. Now, Atlanta has a new source of inspiration for all things makeup and hair.</p>
+                  <p>Makeup is often tedius, but for Adelina, it's like painting a portrait. Now, Atlanta has a new source of inspiration for all things makeup and hair.</p>
                 </div>
                 <div class="item text-center">
                   <h1>International Experience</h1>
@@ -203,10 +203,15 @@
       </div><!-- /row -->
       <h2 class="text-center">Latest Work</h2>
       <p class="text-center">Check out our latest transformations</p>
-      <p class="text-center">Instagram Carousel goes Here</p>
-      <p class="text-center">Instagram Carousel goes Here</p>
-      <p class="text-center">Instagram Carousel goes Here</p>
-      <hr>
+      <br>
+      <!-- SnapWidget Full -->
+      <div class="hidden-xs">
+        <iframe src="https://snapwidget.com/embed/code/235286" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
+      </div>
+      <!-- SnapWidget Mobile -->
+      <div class="visible-xs">
+        <iframe src="https://snapwidget.com/embed/code/235289" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
+      </div>
     </div> <!-- /container -->
 
     <!-- Apply Javascript to do 4 slide in reviews -->
@@ -588,47 +593,13 @@
       </div>
     </div>
 
-    <!-- Replace with Classes -->
+    <!-- Replace with Specials -->
 
-    <!-- Pricing/Classes -->
-    <div class="container-fluid section-image pricing hidden-xs" id="classes">
+    <!-- Pricing/Specials -->
+    <div class="container-fluid section-image specials hidden-xs" id="specials">
       <div class="gray-overlay anchor text-center">
-        <h1>Classes</h1>
+        <h1>Specials</h1>
         <div class="row">
-          <div class="col-xs-6 col-sm-3">
-            <div class="price-block">
-              <h2>$100</h2>
-              <p>This is the $100, bitches.</p>
-              <ul>
-                <li>It's good.</li>
-                <li>Real good.</li>
-                <li>So good.</li>
-                <li>It's good.</li>
-                <li>Real good.</li>
-                <li>So good.</li>
-                <li>It's good.</li>
-                <li>Real good.</li>
-                <li>So good.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-xs-6 col-sm-3">
-            <div class="price-block">
-              <h2>$100</h2>
-              <p>This is the $100, bitches.</p>
-              <ul>
-                <li>It's good.</li>
-                <li>Real good.</li>
-                <li>So good.</li>
-                <li>It's good.</li>
-                <li>Real good.</li>
-                <li>So good.</li>
-                <li>It's good.</li>
-                <li>Real good.</li>
-                <li>So good.</li>
-              </ul>
-            </div>
-          </div>
           <div class="col-xs-6 col-sm-3">
             <div class="price-block">
               <h2>$100</h2>
@@ -709,13 +680,27 @@
     <!-- Contact -->
     <div class="container-fluid section-image contact text-center hidden-xs" id="contact">
       <div class="gray-overlay anchor">
-        <h1>Subscribe for Special Offers</h1>
-        <p>Stay posted for special discounts, giveaways, and other exciting opportunities</p>
-        <form>
-          <input class="clear-field" type="text" name="name" placeholder="Name">
-          <input class="clear-field" type="text" name="email" placeholder="Email"><br>
-          <input type="submit" value="Submit">
-        </form>
+        <h1>Get in Touch</h1>
+        <p>Please let us know if you have any questions or special requests. Adelina will get back to you as soon as possible.</p>
+        <div class="row">
+          <form class="col-xs-7 col-xs-offset-5"> 
+            <label class="sr-only" for="input-name"> Name</label>
+            <input class="clear-field" type="text" id="input-name" name="Name" placeholder="Name">
+            <label class="sr-only" for="input-phone"> Phone Number</label>
+            <input class="clear-field" type="tel" id="input-phone" name="Phone" placeholder="Phone (Optional)">
+            <label class="sr-only" for="input-email"> Email Address</label>
+            <input class="clear-field" type="email" id="input-email" name="Email" placeholder="Email address" required>
+            <label class="sr-only" for="input-subject"> Subject</label>
+            <input class="clear-field" type="text" id="input-subject" name="Message" placeholder="Subject (Optional)">
+            <label class="sr-only" for="input-message"> Message</label>
+            <textarea class="clear-field" style="resize:none" cols="40" rows="5" name="message" id="input-message" placeholder="Message"></textarea>
+            <p id="char-count"></p>
+            <p id="visible-comment"></p>
+            <div class="text-center">  
+              <input type="submit" value="Submit" id="input-submit" class="btn-primary">
+            </div>
+          </form><!-- End Form-->
+        </div>
       </div>
     </div>
 
@@ -792,6 +777,8 @@
         $(".navbar-collapse").collapse('hide');
       });
     </script>
+    <!-- Instagram Feed -->
+    <script src="https://snapwidget.com/js/snapwidget.js"></script>
     <!-- Yelp Review Carousel -->
     <script type="text/javascript">
       var slideIndex = 1;

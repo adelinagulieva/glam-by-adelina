@@ -283,7 +283,7 @@ p, li {
 	height: auto;
 }
 
-/*Classes*/
+/*specials*/
 
 .price-block {
 	background-color: #44166a;
@@ -292,7 +292,7 @@ p, li {
 	padding-bottom: 10px;
 }
 
-.pricing {
+.specials {
 	background-image: url("../img/deals.jpg");
 	background-position: center;
   background-attachment: fixed;

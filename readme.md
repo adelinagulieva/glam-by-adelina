@@ -1,6 +1,10 @@
 # Glam by Adelina to do list
 
-* Create Contact form (copy from Eideldev)
+## Once Adelina is done
+
+* Come up with list for Tools, find Icons
+
+* Descriptions for Classes
 
 ## JavaScript/jQuery
 
@@ -10,18 +14,20 @@
 
 * Connect Carousel to Instagram (Latest)
 
-* Make sure Scheduler works on all devices and screen sizes; use Javascript to define limits for screens
+* Make form fully functional
 
-## Other (See CF)
+## Style
 
-* Do the whole contact form, assign to adelina@glambyadelina.com and aron@glambyadelina.com
+* Eliminate huge spaces between sections from mobile version (elim 70px padding)
 
-## Once Adelina is done
+* Fix wierd blocking/style the form
 
-* Write Description for 3) Award Winning
+## Once done in general
 
-* Change Meet your Artist Photo, Description to include Awards
+* Validate and fix
 
-* Come up with list for Tools, find Icons
+* Launch to ABC
 
-* Descriptions for Classes
+* Submit for review to CF people
+
+* Write nicer Readme.MD
