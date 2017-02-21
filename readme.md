@@ -1,7 +1,5 @@
 Glam by Adelina to do list:
 
-Link Voyage ATL Article
-
 Apply Javascript to do 4 slide in reviews
 
 Link Yelp reviews to slide
