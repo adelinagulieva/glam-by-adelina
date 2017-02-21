@@ -45,6 +45,7 @@ p, li {
 	border-color: #44166a;
 	font-size: 20px;
 	transition: 0.2s;
+	margin: 0 auto;
 }
 
 .btn-primary:hover {
@@ -52,6 +53,11 @@ p, li {
 	border-color: #44166a;
 	color: #44166a;
 	transition: 0.2s;
+}
+
+.img-responsive {
+	width: 80%;
+	margin: 0 auto;
 }
 
 /*Navbar*/
@@ -164,12 +170,12 @@ p, li {
 
 @media (min-width: 768px) {
 	.jumbotron h1 {
-	font-size: 4.5vw;
+	font-size: 40px;
 	}
 
 	.social-media a i{
 	color: white;
-	font-size: 8vw;
+	font-size: 80px;
 	margin-right: 2vw;
 	margin-left: 2vw;
 	opacity: 0.5;
@@ -381,12 +387,6 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 	background-image: url("../img/contact.jpg");
 	background-position: center;
   background-attachment: fixed;
-}
-
-#squadCarousel {
-	padding-left: 10vw;
-	padding-right: 10vw;
-	min-height: 27vw;
 }
 
 /*Booking*/

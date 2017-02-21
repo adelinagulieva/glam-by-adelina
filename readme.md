@@ -1,5 +1,7 @@
 # Glam by Adelina to do list
 
+* Create Contact form (copy from Eideldev)
+
 ## JavaScript/jQuery
 
 * 36 Portfolio Pics (12 each, already have 9 each)
