@@ -117,6 +117,8 @@ p, li {
 .jumbotron {
   background-image: url("../img/landing.jpg");
   background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   min-height: 100vh;
   padding: 0;
 }
@@ -131,6 +133,7 @@ p, li {
 	.jumbotron {
   background-image: url("../img/mobilelanding.jpg");
   background-position: center; 
+  background-attachment: scroll;
 	}
 
 	.jumbotron h1 {
@@ -214,6 +217,8 @@ p, li {
 
 .reviews {
 	background-image: url("../img/reviews.jpg");
+	background-position: center;
+  background-attachment: fixed;
 }
 
 
@@ -223,6 +228,8 @@ p, li {
 
 .tools {
 	background-image: url("../img/tools.jpg");
+	background-position: center;
+  background-attachment: fixed;
 }
 
 /*Services*/
@@ -258,7 +265,7 @@ p, li {
 	height: auto;
 }
 
-/*Pricing*/
+/*Classes*/
 
 .price-block {
 	background-color: #44166a;
@@ -269,6 +276,8 @@ p, li {
 
 .pricing {
 	background-image: url("../img/deals.jpg");
+	background-position: center;
+  background-attachment: fixed;
 }
 
 .clear-field {
@@ -356,8 +365,10 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 
 /*Squad*/
 
-.squad {
-	background-image: url("../img/squad.jpg");
+.contact {
+	background-image: url("../img/contact.jpg");
+	background-position: center;
+  background-attachment: fixed;
 }
 
 #squadCarousel {
