@@ -219,7 +219,6 @@ p, li {
 
 .section-image {
 	background-size: cover;
-	max-height: 100vh;
 	padding: 0;
 	color: white;
 }
@@ -256,6 +255,7 @@ p, li {
 
 .tool-img {
 	width: 100%;
+	padding: 5px;
 }
 /*Services*/
 

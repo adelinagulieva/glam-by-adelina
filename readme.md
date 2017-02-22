@@ -1,9 +1,5 @@
 # Glam by Adelina to do list
 
-* Color overlay for other 8 Icons
-
-* Correct min-height of tools section div and overlay to prevent overlay from going into next section
-
 * Descriptions for Specials
 
 ## JavaScript/jQuery
@@ -21,6 +17,8 @@
 * Fix wierd blocking/style the form
 
 ## Once done in general
+
+* Add links to logos in Tools for SEO
 
 * Validate and fix
 
