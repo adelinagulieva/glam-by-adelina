@@ -551,7 +551,16 @@ footer {
 @media (max-width: 768px) {
 	.anchor {
 		padding-bottom: 0;
+	}
+	.landing-jumbo {
+		padding-bottom: 30px;
+	}
 }
+
+@media (max-width: 400px) {
+	.landing-jumbo .booking-btn {
+		margin-bottom: 30px;
+	}
 }
 
 h1 {
