@@ -249,6 +249,10 @@ p, li {
   background-attachment: fixed;
 }
 
+.tools li {
+	font-size: 20px;
+}
+
 .tools li a {
  	color: white;
 }
@@ -295,8 +299,13 @@ p, li {
 .price-block {
 	background-color: #44166a;
 	color: white;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	width: 400px;
+	height: 400px;
+	border-radius: 50%;
+	padding-top: 140px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 20px;
 }
 
 .specials {
@@ -305,11 +314,17 @@ p, li {
   background-attachment: fixed;
 }
 
+.specials a {
+	color: white;
+}
+
 .clear-field {
 	background-color: rgba(0,0,0,0.1);
-	width: 400px;
+	width: 80%;
+	margin: 5px auto;
 	padding: 10px;
 	color: white;
+	border-radius: 10px;
 }
 
 .clear-field:hover {
@@ -388,7 +403,9 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
    }
 }
 
-/*Squad*/
+/*Blog*/
+
+/*Contact*/
 
 .contact {
 	background-image: url("../img/contact.jpg");
