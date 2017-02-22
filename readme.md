@@ -8,7 +8,13 @@
 
 ## Style
 
+* Stylize and repaste Yelp reviews with link to avoid loading/framing issues
+
 * Eliminate huge spaces between sections from mobile version (elim 70px padding)
+
+## File
+
+* Add Blog page
 
 ## Once done in general
 
@@ -26,6 +32,7 @@
 
 * Canvas erase model picture before and after at landing (use jQuery erase)
 
-* Stylize and repaste Yelp reviews with link to avoid loading/framing issues
-
 * Make own Instagram carousel to avoid 3rd parties
+
+* Make own Yelp carousel to avoid awful API direct calls
+
