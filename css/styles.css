@@ -561,3 +561,184 @@ h1 {
 .wrapper h1 {
 	margin-top: 0;
 }
+
+.blog h1, h2, h3 {
+	text-align: center;
+}
+
+.center-img {
+	text-align: center;
+}
+
+footer {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+.blog {
+	padding-bottom: 70px;
+}
+
+/*Blog 1:*/
+
+.heading {
+	width: 60%;
+}
+
+@media (max-width: 500px) {
+	.heading {
+		width: 80%;
+}
+}
+
+.partner {
+	width: 20%;
+}
+
+.Hair1 {
+	width: 20%;
+}
+
+.Hair2 {
+	width: 20%;
+}
+
+.wedding2 {
+	width: 20%;
+}
+
+.wedding1 {
+	width: 30%;
+}
+
+.wedding3 {
+	width: 20%;
+}
+
+.wedding4 {
+	width: 35%;
+}
+
+.wedding5 {
+	width: 42%;
+}
+
+.wedding6 {
+	width: 42%;
+}
+
+.wedding7 {
+	width: 42%;
+}
+
+.wedding8 {
+	width: 42%;
+}
+
+.wedding9 {
+	width: 42%;
+}
+
+.wedding10 {
+	width: 25%;
+}
+
+.cream1 {
+	width: 20%;
+}
+
+.cream2 {
+	width: 20%;
+}
+
+.cream3 {
+	width: 10%;
+}
+
+.cream4 {
+	width: 17%;
+}
+
+.cream5 {
+	width: 17%;
+}
+
+.cream6 {
+	width: 10%;
+}
+
+.cream8 {
+	width: 30%;
+}
+
+.cream9 {
+	width: 30%;
+}
+
+.cream10 {
+	width: 15%;
+}
+
+.makeup1 {
+	width: 20%;
+}
+
+.makeup2 {
+	width: 20%;
+}
+
+.makeup3 {
+	width: 30%;
+}
+
+.makeup4 {
+	width: 30%;
+}
+
+.makeup5 {
+	width: 30%;
+}
+
+.makeup6 {
+	width: 30%;
+}
+
+.makeup7 {
+	width: 20%;
+}
+
+.makeup8 {
+	width: 20%;
+}
+
+.makeup9 {
+	width: 20%;
+}
+
+.makeup10 {
+	width: 20%;
+}
+
+.makeup11 {
+	width: 20%;
+}
+
+.makeup12 {
+	width: 30%;
+}
+
+.makeup13 {
+	width: 30%;
+}
+
+.makeup14 {
+	width: 30%;
+}
+
+.makeup15 {
+	width: 30%;
+}
+.creams {
+	width: 10%;
+}

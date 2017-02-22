@@ -1,11 +1,5 @@
 # Glam by Adelina to do list
 
-## Style
-
-* Eliminate huge spaces between sections from mobile version (elim 70px padding)
-
-* Style the Blog page
-
 ## File
 
 * Add Blog page
@@ -36,3 +30,6 @@
 
 * Make forms free of formspree
 
+* Change classes to IDs where appropriate in blog
+
+* Make images for blog semantic file names
