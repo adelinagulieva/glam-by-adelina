@@ -295,15 +295,15 @@ p, li {
 }
 
 #bsPhotoGalleryModal .modal-content {
-    border-radius:0;
+  border-radius:0;
 }
 #bsPhotoGalleryModal .modal-dialog img {
-    text-align:center;
-    margin:0 auto;
-    width:100%;
+  text-align:center;
+  margin:0 auto;
+  width:100%;
 }
 #bsPhotoGalleryModal .modal-body {
-    padding:0px !important;
+  padding:0px !important;
 }
 #bsPhotoGalleryModal .bsp-close {
   position: absolute; 
@@ -546,6 +546,12 @@ footer {
 .anchor {
 	padding-top: 70px;
 	padding-bottom: 70px;
+}
+
+@media (max-width: 768px) {
+	.anchor {
+		padding-bottom: 0;
+}
 }
 
 h1 {

@@ -2,13 +2,15 @@
 
 ## Style
 
-* Stylize and repaste Yelp reviews with link to avoid loading/framing issues
-
 * Eliminate huge spaces between sections from mobile version (elim 70px padding)
+
+* Style the Blog page
 
 ## File
 
 * Add Blog page
+
+* Put JS into its own folder
 
 ## Once done in general
 
@@ -21,6 +23,8 @@
 * Write nicer Readme.MD
 
 ## Icebox
+
+* Stylize and repaste Yelp reviews with link to avoid loading/framing issues
 
 * Add links to logos in Tools for SEO
 
