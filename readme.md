@@ -1,11 +1,5 @@
 # Glam by Adelina to do list
 
-## JavaScript/jQuery
-
-* 36 modal Portfolio Pics (12 each) in Services
-
-* Make form fully functional
-
 ## Style
 
 * Stylize and repaste Yelp reviews with link to avoid loading/framing issues
@@ -35,4 +29,6 @@
 * Make own Instagram carousel to avoid 3rd parties
 
 * Make own Yelp carousel to avoid awful API direct calls
+
+* Make forms free of formspree
 
