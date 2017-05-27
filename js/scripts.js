@@ -1,4 +1,3 @@
-
 // Scrolling Navigation
 
 var $root = $('html, body');
