@@ -1,5 +1,4 @@
 // Scrolling Navigation
-
 var $root = $('html, body');
 $('.navbar-nav a').click(function() {
   var href = $.attr(this, 'href');
@@ -10,8 +9,6 @@ $('.navbar-nav a').click(function() {
   });
   return false;
 });
-
-var $root = $('html, body');
 $('.glambyadelina a').click(function() {
   var href = $.attr(this, 'href');
   $root.animate({
@@ -20,10 +17,7 @@ $('.glambyadelina a').click(function() {
     window.location.hash = href;
   });
   return false;
-}); 
-
-
-var $root = $('html, body');
+});
 $('.glambyadelina a').click(function() {
   var href = $.attr(this, 'href');
   $root.animate({
@@ -32,10 +26,7 @@ $('.glambyadelina a').click(function() {
     window.location.hash = href;
   });
   return false;
-}); 
-
-
-var $root = $('html, body');
+});
 $('.booking-btn a').click(function() {
   var href = $.attr(this, 'href');
   $root.animate({
@@ -44,10 +35,7 @@ $('.booking-btn a').click(function() {
     window.location.hash = href;
   });
   return false;
-}); 
-
-
-var $root = $('html, body');
+});
 $('.specials a').click(function() {
   var href = $.attr(this, 'href');
   $root.animate({
@@ -58,41 +46,60 @@ $('.specials a').click(function() {
   return false;
 });
 
-// Navbar Retract 
-
+// Navbar Retract
 $(".navbar-nav li a").click(function(event) {
   if (!$(this).parent().hasClass('dropdown'))
   $(".navbar-collapse").collapse('hide');
 });
 
-// Instagram Feed  
-
-
-// Yelp Review Carousel  
-
+// Yelp Review Carousel
 var slideIndex = 1;
 showDivs(slideIndex);
-
 function plusDivs(n) {
   showDivs(slideIndex += n);
 }
-
 function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("yelp-review");
-  if (n > x.length) {slideIndex = 1} 
+  if (n > x.length) {slideIndex = 1}
   if (n < 1) {slideIndex = x.length} ;
   for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none"; 
+    x[i].style.display = "none";
   }
-  x[slideIndex-1].style.display = "block"; 
+  x[slideIndex-1].style.display = "block";
 }
 
-// Lightbox  
+// Service Tabs
+$('.gridtab-2').gridtab({
+  grid: 6,
+  borderWidth: 3,
+  contentPadding: 40,
+  config:{
+    layout:'tab'
+  },
+  responsive: [{
+    breakpoint: 1024,
+    settings: {
+      grid: 4,
+    }
+  }, {
+    breakpoint: 767,
+    settings: {
+      grid: 3,
+      contentPadding: 20
+    }
+  }, {
+      breakpoint: 520,
+      settings: {
+        grid: 2
+      }
+  }]
+});
 
 
+// Lightbox
 (function($) {
-  "use strict";
+
   $.fn.bsPhotoGallery = function(options) {
 
     var settings = $.extend({}, $.fn.bsPhotoGallery.defaults, options);
@@ -105,7 +112,6 @@ function showDivs(n) {
       return 'ul[data-bsp-ul-id="'+clicked.ulId+'"][data-bsp-ul-index="'+clicked.ulIndex+'"]';
     }
     function generateId() {
-      //http://fiznool.com/blog/2014/11/16/short-id-generation-in-javascript/
       var ALPHABET = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
       var ID_LENGTH = 4;
       var out = '';
@@ -115,25 +121,21 @@ function showDivs(n) {
       return 'bsp-'+out;
     }
     function createModalWrap(){
-
       if($('#bsPhotoGalleryModal').length !== 0){
         return false;
       }
-
       var modal = '';
       modal += '<div class="modal fade" id="bsPhotoGalleryModal" tabindex="-1" role="dialog"';
       modal += 'aria-labelledby="myModalLabel" aria-hidden="true">';
       modal += '<div class="modal-dialog modal-lg"><div class="modal-content">';
       modal += '<div class="modal-body"></div></div></div></div>';
       $('body').append(modal);
-
     }
     function showHideControls(){
       var total = $(getCurrentUl()+' li[data-bsp-li-index]').length;
-
-      if(total === clicked.nextImg){
+      if (total === clicked.nextImg){
         $('a.next').hide();
-      }else{
+      } else {
         $('a.next').show()
       }
       if(clicked.prevImg === -1){
@@ -153,10 +155,10 @@ function showDivs(n) {
       var ulIndex = $(this).parent('ul').attr('data-bsp-ul-index');
       var ulId = $(this).parent('ul').attr('data-bsp-ul-id');
       var theImg = $(this).find('img');
-      var pText = $(this).find('.text').html();        
+      var pText = $(this).find('.text').html();
       var modalText = typeof pText !== 'undefined' ? pText : 'undefined';
       var alt =  typeof theImg.attr('alt') == 'string' ? theImg.attr('alt') : null;
-      
+
       clicked.img = src;
       clicked.prevImg = parseInt(index) - parseInt(1);
       clicked.nextImg = parseInt(index) + parseInt(1);
@@ -172,17 +174,17 @@ function showDivs(n) {
       html += img;
       html += '<span class="' + settings.iconClose + ' bsp-close"></span>';
       html += '<div class="bsp-text-container">';
-      
+
       if(alt !== null){
         html += '<h6>'+alt+'</h6>'
       }
       if(typeof pText !== 'undefined'){
         html += '<p class="pText">'+pText+'</p>'
-      }        
+      }
       html += '</div>';
       html += '<a class="bsp-controls next" data-bsp-id="'+clicked.ulId+'" href="'+ (clicked.nextImg) + '"><span class="' + settings.iconRight + '"></span></a>';
       html += '<a class="bsp-controls previous" data-bsp-id="'+clicked.ulId+'" href="' + (clicked.prevImg) + '"><span class="' + settings.iconLeft + '"></span></a>';
-    
+
       $('#bsPhotoGalleryModal .modal-body').html(html);
       $('.bsp-close').on('click', closeModal);
       showHideControls();
@@ -201,13 +203,13 @@ function showDivs(n) {
         var largeImg = ul.find('li[data-bsp-li-index="'+index+'"] img').attr('data-bsp-large-src');
         if(typeof largeImg === 'string'){
               src = largeImg;
-        } 
-        
-        var pText = ul.find('li[data-bsp-li-index="'+index+'"] .text').html();        
+        }
+
+        var pText = ul.find('li[data-bsp-li-index="'+index+'"] .text').html();
         var modalText = typeof pText !== 'undefined' ? pText : 'undefined';
         var theImg = ul.find('li[data-bsp-li-index="'+index+'"] img');
         var alt =  typeof theImg.attr('alt') == 'string' ? theImg.attr('alt') : null;
-         
+
         $('#bsPhotoGalleryModal .modal-body img').attr('src', src);
         var txt = '';
         if(alt !== null){
@@ -215,9 +217,9 @@ function showDivs(n) {
         }
         if(typeof pText !== 'undefined'){
           txt += '<p class="pText">'+pText+'</p>'
-        }        
-        
-        $('.bsp-text-container').html(txt); 
+        }
+
+        $('.bsp-text-container').html(txt);
 
         clicked.prevImg = parseInt(index) - 1;
         clicked.nextImg = parseInt(clicked.prevImg) + 2;
@@ -361,7 +363,7 @@ function showDivs(n) {
       $(this).attr('data-bsp-ul-index', i);
 
       items.each(function(x){
-        var theImg = $(this).find('img'); 
+        var theImg = $(this).find('img');
         insertClearFix(this,x);
         $(this).addClass(classesString);
         $(this).attr('data-bsp-li-index', x);
@@ -389,27 +391,25 @@ function showDivs(n) {
   /*defaults*/
   $.fn.bsPhotoGallery.defaults = {
     'classes' : 'col-lg-2 col-md-2 col-sm-3 col-xs-4',
-    'hasModal' : true, 
+    'hasModal' : true,
     'fullHeight' : true,
     'iconClose' : 'glyphicon glyphicon-remove-circle',
     'iconLeft' : 'glyphicon glyphicon-chevron-left',
     'iconRight' : 'glyphicon glyphicon-chevron-right'
   }
-
-
 }(jQuery));
 
 
 $(document).ready(function(){
-   $('.boxInner img').on('click',function(){
-        var src = $(this).attr('src');
-        var img = '<img src="' + src + '" class="img-responsive"/>';
-        $('#myModal').modal();
-        $('#myModal').on('shown.bs.modal', function(){
-            $('#myModal .modal-body').html(img);
-        });
-        $('#myModal').on('hidden.bs.modal', function(){
-            $('#myModal .modal-body').html('');
-        });
-   });
+  $('.boxInner img').on('click',function(){
+    var src = $(this).attr('src');
+    var img = '<img src="' + src + '" class="img-responsive"/>';
+    $('#myModal').modal();
+    $('#myModal').on('shown.bs.modal', function(){
+        $('#myModal .modal-body').html(img);
+    });
+    $('#myModal').on('hidden.bs.modal', function(){
+        $('#myModal .modal-body').html('');
+    });
+  });
 })
