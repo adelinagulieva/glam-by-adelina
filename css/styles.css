@@ -810,3 +810,45 @@ footer {
   margin: 20px 0;
   width: 100%;
 }
+
+section {
+	min-height: 100vh;
+	margin-top: 70px;
+}
+
+.content article {
+	box-sizing: border-box;
+	margin: 20px;
+	border: 2px solid gray;
+	padding: 20px;
+
+}
+
+section.content {
+	padding-right: 30vw;
+	width: 100%;
+	float: left;
+}
+
+@media (max-width: 767px) {
+	section.content {
+		padding-right: 0;
+	}
+}
+
+section.content nav {
+	position: relative;
+}
+
+section.content nav ul {
+	position: absolute;
+	left: 50%;
+	transform: translatex(-50%);
+}
+
+section.history {
+	border-left: 2px solid gray;
+	position: fixed;
+	right: 0px;
+	width: 30vw;
+}
