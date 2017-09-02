@@ -25,6 +25,7 @@ p, li {
 	width: 100%;
 }
 
+/*A gray overlay for backgrounds*/
 .gray-overlay {
 	background-color: rgba(0, 0, 0, .6);
 	min-height: 100vh;
