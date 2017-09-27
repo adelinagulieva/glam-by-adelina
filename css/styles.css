@@ -35,7 +35,15 @@ p, li {
 #logo {
 	font-family: 'Oswald', lato, sans-serif;
 	color: white;
+	padding-top: 22px;
 }
+
+#logo img {
+  width: 248px;
+  margin-top: -7px;
+  margin-left: -7px;
+}
+
 
 .row {
 	max-width: 100vw;
@@ -81,11 +89,6 @@ p, li {
 
 .navbar-fixed-top .navbar-collapse {
 	max-height: 100vh;
-}
-
-#logo {
-	padding-top: 22px;
-	padding-left: 5vw;
 }
 
 .nav li a {
