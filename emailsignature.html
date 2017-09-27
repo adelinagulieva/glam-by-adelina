@@ -2,23 +2,31 @@
 <html>
   <head>
     <style>
+      .main {
+        width: 534px;
+        height: 100px;
+      }
       .crop img {
-        height: 130px;
-        width: 130px;
+        height: 20%;
+        width: 20%;
         border-radius: 100%;
         float: left;
+        margin-right: 3%;
       }
       .info {
         float: left;
-        padding-left: 10px;
+        width: 70%;
+        border-left: 1px solid black;
+        padding-left: 3%;
+        padding-top: 2%;
       }
       .logo {
-        height: 50px;
-        width: auto;
+        width: 60%;
+        height: auto;
       }
       ul {
         list-style: none;
-        padding: 0 0 0 16px;
+        padding: 0;
         margin-top: 0;
         font-size: 18px;
       }
@@ -39,38 +47,15 @@
         width: 30px;
         height: 30px;
       }
-      @media (max-width: 534px) {
-        .crop img {
-          width: 25%;
-          height: auto
-        }
-        .info {
-          padding: 0;
-          float: right;
-          width: 70%;
-        }
-        ul {
-          padding: 4%;
-          font-size: 12px;
-        }
-        .logo {
-          width: 70%;
-          height: auto;
-        }
-        .social-list li {
-          padding-top: 5px;
-        }
-        .social-list img {
-          width: 20px;
-          height: 20px;
-        }
-      }
     </style>
   </head>
   <body>
     <div class="main">
-      <div class="crop"><img src="http://www.glambyadelina.com/img/host/profile.png" alt="Profile Photo" /></div>
-      <section class="info"><img src="https://docs.google.com/drawings/d/e/2PACX-1vSoNtYqP4POdu0W101D6-DaZ0b2CcswLasWNeSUpQA-ltf2ljrW3mJi_nTD7RHHrdaJ7czr6AhFiELe/pub?w=754&amp;h=100" class="logo" />
+      <div class="crop">
+        <img src="http://www.glambyadelina.com/img/host/profile.png" alt="Profile Photo" />
+      </div>
+      <section class="info">
+        <img src="img/host/logo.png" class="logo" />
         <ul>
           <li>
             <a href="tel:+1-415-697-9969">415-697-9969</a>
