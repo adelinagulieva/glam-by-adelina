@@ -26,6 +26,19 @@
         text-decoration: none;
         color: #44166a;
       }
+      .social-list {
+        padding-left: 0;
+        margin-right: 0;
+      }
+      .social-list li {
+        display: inline-block;
+        padding-top: 10px;
+        padding-right: 20px;
+      }
+      .social-list img {
+        width: 30px;
+        height: 30px;
+      }
       @media (max-width: 534px) {
         .crop img {
           width: 25%;
@@ -44,6 +57,13 @@
           width: 70%;
           height: auto;
         }
+        .social-list li {
+          padding-top: 5px;
+        }
+        .social-list img {
+          width: 20px;
+          height: 20px;
+        }
       }
     </style>
   </head>
@@ -56,6 +76,14 @@
             <a href="tel:+1-415-697-9969">415-697-9969</a>
             |
             <a href="www.glambyadelina.com">www.glambyadelina.com</a>
+          </li>
+          <li>
+            <ul class="social-list">
+              <li><a href=""><img src="img/host/facebook.png"/></a></li>
+              <li><a href=""><img src="img/host/instagram.png"/></a></li>
+              <li><a href=""><img src="img/host/pinterest.png"/></a></li>
+              <li><a href=""><img src="img/host/yelp.png"/></a></li>
+            <ul>
           </li>
         </ul>
       </section>
