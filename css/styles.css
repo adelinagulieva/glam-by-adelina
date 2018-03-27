@@ -227,11 +227,14 @@ li {
 }
 
 .feature-image {
-	background-image: url(https://s3-media1.fl.yelpcdn.com/bphoto/vVri02hUT10TyRQR6mPIoQ/o.jpg);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
 	flex: 1;
+}
+
+#grace {
+	background-image: url(https://s3-media1.fl.yelpcdn.com/bphoto/vVri02hUT10TyRQR6mPIoQ/o.jpg);
 }
 
 .review-content {
