@@ -221,12 +221,35 @@ li {
 	color: white;
 }
 
-/*Reviews*/
+/* Featured Review */
+.featured-review {
+	display: flex;
+}
 
-.reviews {
-	background-image: url("../img/reviews.jpg");
+.feature-image {
+	background-image: url(https://s3-media1.fl.yelpcdn.com/bphoto/vVri02hUT10TyRQR6mPIoQ/o.jpg);
+	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
+	flex: 1;
+}
+
+.review-content {
+	flex: 1;
+	background-color: white;
+}
+
+.review-content * {
+	padding: 0 10%;
+}
+
+.review-content button {
+	margin: auto 0;
+}
+
+.reviews {
+	min-height: 100vh;
+	padding: 0;
 }
 
 .yelp-review {
