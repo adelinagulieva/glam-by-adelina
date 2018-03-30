@@ -242,7 +242,7 @@ li {
 	background-color: white;
 }
 
-.review-content * {
+.review-content > * {
 	padding: 0 10%;
 }
 
@@ -253,6 +253,14 @@ li {
 .reviews {
 	min-height: 100vh;
 	padding: 0;
+}
+
+.fa-star {
+	color: red;
+}
+
+.yelp-button {
+	background-color: red;
 }
 
 .yelp-review {
