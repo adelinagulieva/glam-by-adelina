@@ -19,7 +19,8 @@ h4 {
 
 p,
 li,
-button {
+button,
+.btn {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 }
@@ -246,7 +247,7 @@ button {
 }
 
 .review-content > * {
-	padding: 0 10%;
+	padding: 2% 10%;
 }
 
 .review-content button {
@@ -260,6 +261,11 @@ button {
 
 .fa-star {
 	color: red;
+}
+
+.btn-row {
+    display: flex;
+    justify-content: space-around;
 }
 
 .yelp-button {
