@@ -10,14 +10,14 @@ body {
 
 h1,
 h2 {
-	font-family: 'Oswald', lato, sans-serif;
+	font-family: 'Dosis', sans-serif;
 	font-style: normal;
 	font-weight: 400;
 }
 
 p,
 li {
-	font-family: lato, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 }
 
@@ -35,7 +35,7 @@ li {
 }
 
 #logo {
-	font-family: 'Oswald', lato, sans-serif;
+	font-family: 'Dosis', sans-serif;
 	color: white;
 	padding-top: 22px;
 }
@@ -885,4 +885,9 @@ section.history {
 	position: fixed;
 	right: 0px;
 	width: 30vw;
+}
+
+/* Overwrite Bootstrap Line */
+a:focus, a:hover {
+    text-decoration: none;
 }
