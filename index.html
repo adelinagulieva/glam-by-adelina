@@ -471,50 +471,10 @@
         <a href="#tab-4" data-toggle="tab">Eastern</a>
       </li>
     </ul>
-    <span>{{ active }}</span>
-    <div class="tab-content well text-left">
-      <!-- Tab 1: Bridal -->
-      <div class="tab-pane" id="tab-1" v-if="active === 'bridal'">
-        <div class="wrap" id="bridal-samples">
-          <div class="box" v-for="sample in bridal.samples">
-            <div class="boxInner">
-              <img v-bind:src="sample.image">
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Tab 2: Makeup -->
-      <div class="tab-pane" id="tab-2" v-if="active === 'makeup'">
-        <!-- Portfolio Wrap-->
-        <div class="wrap" id="makeup-samples">
-          <div class="box" v-for="sample in makeup.samples">
-            <div class="boxInner">
-              <img v-bind:src="sample.image">
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Tab 3: Hair -->
-      <div class="tab-pane" id="tab-3" v-if="active === 'hair'">
-        <!-- Portfolio Wrap-->
-        <div class="wrap" id="hair-samples">
-          <div class="box" v-for="sample in hair.samples">
-            <div class="boxInner">
-              <img v-bind:src="sample.image">
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Tab 4: Eastern -->
-      <div class="tab-pane" id="tab-4" v-if="active === 'eastern'">
-        <!-- Portfolio Wrap-->
-        <div class="wrap" id="eastern-samples">
-          <div class="box" v-for="sample in eastern.samples">
-            <div class="boxInner">
-              <img v-bind:src="sample.image">
-            </div>
-          </div>
-        </div>
+    <div class="sample-grid">
+      <div v-for="sample in type[active].samples"
+           class="sample-wrapper">
+        <img v-bind:src="sample.image">
       </div>
     </div>
     <!-- Booking Button -->

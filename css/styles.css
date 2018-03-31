@@ -331,27 +331,21 @@ button,
 	justify-content: center;
 }
 
-.tab-pane .row {
-	min-height: 280px;
+.sample-grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between
 }
 
-.tab-content {
-	border: none;
-	background-color: white;
+.sample-wrapper {
+	margin-top: 5vw;
+	width: 25vw;
+	height: 25vw;
+	overflow: hidden;
 }
 
-.tab-pane img {
-	width: 20vw;
-	height: auto;
-}
-
-@media screen and (max-width: 380px) {
-	.col-xxs-12 {
-		width: 100%;
-	}
-	.col-xxs-12 img {
-		width: 100%;
-	}
+.sample-wrapper img {
+	width: 100%;
 }
 
 /*Specials*/
