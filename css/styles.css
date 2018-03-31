@@ -282,13 +282,6 @@ button,
 	margin: 20px auto;
 }
 
-.carousel-control.left,
-.carousel-control.right {
-	background-image: none
-}
-
-/*About*/
-
 /*Tools*/
 
 .tools {
@@ -467,21 +460,30 @@ body.touch .boxInner.touchFocus .titleBox {
 	}
 }
 
-/*Blog*/
-
 /*Contact*/
 
 .contact {
 	background-image: url("../img/contact.jpg");
 	background-position: center;
 	background-attachment: fixed;
+	min-height: 100vh;
+	padding-bottom: 70px;
+}
+
+@media (max-width: 767px){
+	.gray-overlay {
+		height: 130vh;
+	}
+	.contact {
+		background-attachment: scroll;
+	}
 }
 
 /*Footer*/
 
 footer {
 	min-height: 70px;
-	background-color: #44166a;
+	background-color: #44166A;
 	color: white;
 	padding-top: 20px;
 	padding-left: 5%;
