@@ -8,7 +8,7 @@
   <title>Makeup and Hair by Adelina</title>
   <link href="https://fonts.googleapis.com/css?family=Dosis|Open+Sans" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
   <script src="https://use.fontawesome.com/20969d6e40.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -457,40 +457,26 @@
     </p>
 
     <!-- New Area -->
-
-    <!-- Lightbox -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-body">
-          </div>
-        </div>
-        <!-- /.modal-content -->
-      </div>
-      <!-- /.modal-dialog -->
-    </div>
-    <!-- /.modal -->
-    <!-- End Lightbox -->
-    <!-- Hover Pills -->
     <ul class="nav nav-pills center-pills">
-      <li class="active">
+      <li class="active" v-on:mouseover="active = 'bridal'">
         <a href="#tab-1" data-toggle="tab">Bridal</a>
       </li>
-      <li>
+      <li v-on:mouseover="active = 'makeup'">
         <a href="#tab-2" data-toggle="tab">Makeup</a>
       </li>
-      <li>
+      <li v-on:mouseover="active = 'hair'">
         <a href="#tab-3" data-toggle="tab">Hair</a>
       </li>
-      <li>
+      <li v-on:mouseover="active = 'eastern'">
         <a href="#tab-4" data-toggle="tab">Eastern</a>
       </li>
     </ul>
+    <span>{{ active }}</span>
     <div class="tab-content well text-left">
       <!-- Tab 1: Bridal -->
-      <div class="tab-pane active" id="tab-1">
+      <div class="tab-pane" id="tab-1" v-if="active === 'bridal'">
         <div class="wrap" id="bridal-samples">
-          <div class="box" v-for="sample in samples">
+          <div class="box" v-for="sample in bridal.samples">
             <div class="boxInner">
               <img v-bind:src="sample.image">
             </div>
@@ -498,10 +484,10 @@
         </div>
       </div>
       <!-- Tab 2: Makeup -->
-      <div class="tab-pane" id="tab-2">
+      <div class="tab-pane" id="tab-2" v-if="active === 'makeup'">
         <!-- Portfolio Wrap-->
         <div class="wrap" id="makeup-samples">
-          <div class="box" v-for="sample in samples">
+          <div class="box" v-for="sample in makeup.samples">
             <div class="boxInner">
               <img v-bind:src="sample.image">
             </div>
@@ -509,10 +495,10 @@
         </div>
       </div>
       <!-- Tab 3: Hair -->
-      <div class="tab-pane" id="tab-3">
+      <div class="tab-pane" id="tab-3" v-if="active === 'hair'">
         <!-- Portfolio Wrap-->
         <div class="wrap" id="hair-samples">
-          <div class="box" v-for="sample in samples">
+          <div class="box" v-for="sample in hair.samples">
             <div class="boxInner">
               <img v-bind:src="sample.image">
             </div>
@@ -520,10 +506,10 @@
         </div>
       </div>
       <!-- Tab 4: Eastern -->
-      <div class="tab-pane" id="tab-4">
+      <div class="tab-pane" id="tab-4" v-if="active === 'eastern'">
         <!-- Portfolio Wrap-->
         <div class="wrap" id="eastern-samples">
-          <div class="box" v-for="sample in samples">
+          <div class="box" v-for="sample in eastern.samples">
             <div class="boxInner">
               <img v-bind:src="sample.image">
             </div>
