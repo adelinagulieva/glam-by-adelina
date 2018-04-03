@@ -2,6 +2,7 @@ new Vue({
   el: '#services',
   data: {
     active: 'bridal',
+    lightbox: '',
     type: {
       bridal: {
         samples: [

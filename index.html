@@ -471,31 +471,41 @@
         <a href="#tab-4" data-toggle="tab">Eastern</a>
       </li>
     </ul>
+    <span>{{ lightbox }}</span>
+    <div v-if="lightbox !== ''">
+      <img v-bind:src="lightbox">
+      <span v-on:click="lightbox = ''">X</span>
+    </div>
     <div v-if="active === 'bridal'" class="sample-grid">
       <div v-for="sample in type.bridal.samples"
            class="sample-wrapper">
-        <img v-bind:src="sample.image">
+        <img v-bind:src="sample.image"
+             v-on:click="lightbox = sample.image">
       </div>
     </div>
     <div v-if="active === 'makeup'" class="sample-grid">
       <div v-for="sample in type.makeup.samples"
            class="sample-wrapper">
-        <img v-bind:src="sample.image">
+        <img v-bind:src="sample.image"
+             v-on:click="lightbox = sample.image">
       </div>
     </div>
     <div v-if="active === 'hair'" class="sample-grid">
       <div v-for="sample in type.hair.samples"
            class="sample-wrapper">
-        <img v-bind:src="sample.image">
+        <img v-bind:src="sample.image"
+             v-on:click="lightbox = sample.image">
       </div>
     </div>
     <div v-if="active === 'eastern'" class="sample-grid">
       <div v-for="sample in type.eastern.samples"
            class="sample-wrapper">
-        <img v-bind:src="sample.image">
+        <img v-bind:src="sample.image"
+             v-on:click="lightbox = sample.image">
       </div>
     </div>
     <!-- Booking Button -->
+    <br>
     <div class="hidden-xs booking-btn">
       <a href="#contact">
         <button type="button" class="btn btn-primary">
