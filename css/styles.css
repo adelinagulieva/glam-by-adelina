@@ -58,6 +58,8 @@ button,
 	background-color: #44166a;
 	border-color: #44166a;
 	font-size: 20px;
+	-webkit-transition: 0.2s;
+	-o-transition: 0.2s;
 	transition: 0.2s;
 	margin: 0 auto;
 }
@@ -66,6 +68,8 @@ button,
 	background-color: white;
 	border-color: #44166a;
 	color: #44166a;
+	-webkit-transition: 0.2s;
+	-o-transition: 0.2s;
 	transition: 0.2s;
 }
 
@@ -184,11 +188,15 @@ button,
 		margin-right: 2vw;
 		margin-left: 2vw;
 		opacity: 0.5;
+		-webkit-transition: 0.2s;
+		-o-transition: 0.2s;
 		transition: 0.2s;
 	}
 	.social-media a i:hover {
 		color: white;
 		opacity: 1;
+		-webkit-transition: 0.2s;
+		-o-transition: 0.2s;
 		transition: 0.2s;
 	}
 }
@@ -226,7 +234,10 @@ button,
 }
 
 /* Featured Review */
+
 .featured-review {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
@@ -234,6 +245,8 @@ button,
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
 	flex: 1;
 }
 
@@ -242,11 +255,13 @@ button,
 }
 
 .review-content {
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
 	flex: 1;
 	background-color: white;
 }
 
-.review-content > * {
+.review-content>* {
 	padding: 2% 10%;
 }
 
@@ -264,8 +279,11 @@ button,
 }
 
 .btn-row {
-    display: flex;
-    justify-content: space-around;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
 }
 
 .yelp-button {
@@ -320,13 +338,22 @@ button,
 }
 
 .center-pills {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 }
 
 .sample-grid {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between
 }
 
@@ -336,18 +363,27 @@ button,
 	height: 25vw;
 	overflow: hidden;
 	position: relative;
+	-webkit-box-shadow: 1px 1px #44166a;
 	box-shadow: 1px 1px #44166a;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
 	transition: 0.3s;
 }
 
 .sample-wrapper:hover {
+	-webkit-box-shadow: 10px 10px black;
 	box-shadow: 10px 10px black;
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
 	transform: scale(1.1);
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
 	transition: 0.3s;
 }
 
 .sample-wrapper img {
 	width: 100%;
+	cursor: -webkit-zoom-in;
 	cursor: zoom-in;
 }
 
@@ -360,6 +396,7 @@ button,
 	width: 100%;
 	padding-top: calc(90px);
 	background-color: rgba(68, 22, 106, 0.9);
+	cursor: -webkit-zoom-out;
 	cursor: zoom-out;
 }
 
@@ -401,6 +438,8 @@ button,
 	border: 1px solid white;
 	font-size: 20px;
 	font-family: 'Open Sans', sans-serif;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
 	transition: 0.3s;
 	outline: none;
 }
@@ -409,16 +448,18 @@ button,
 	background-color: #44166a;
 	color: white;
 	opacity: 0.8;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
 	transition: 0.3s;
 }
 
 .clear-field:focus {
 	background-color: white;
 	color: #44166a;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
 	transition: 0.3s;
 }
-
-
 
 /*Portfolio*/
 
@@ -459,7 +500,6 @@ button,
 	padding: 10px;
 	text-align: center;
 	-webkit-transition: all 0.3s ease-out;
-	-moz-transition: all 0.3s ease-out;
 	-o-transition: all 0.3s ease-out;
 	transition: all 0.3s ease-out;
 }
@@ -511,7 +551,7 @@ body.touch .boxInner.touchFocus .titleBox {
 	padding-bottom: 70px;
 }
 
-@media (max-width: 767px){
+@media (max-width: 767px) {
 	.gray-overlay {
 		height: 130vh;
 	}
@@ -806,6 +846,7 @@ section {
 }
 
 .content article {
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	margin: 20px;
 	border: 2px solid gray;
@@ -831,6 +872,8 @@ section.content nav {
 section.content nav ul {
 	position: absolute;
 	left: 50%;
+	-webkit-transform: translatex(-50%);
+	-ms-transform: translatex(-50%);
 	transform: translatex(-50%);
 }
 
@@ -842,17 +885,21 @@ section.history {
 }
 
 /* Overwrite Bootstrap Line */
-a:focus, a:hover {
-    text-decoration: none;
+
+a:focus,
+a:hover {
+	text-decoration: none;
 }
 
 /* Adjust buttons */
+
 .btn.btn-primary {
-    border-radius: 25px;
-    padding: 7px 20px;
+	border-radius: 25px;
+	padding: 7px 20px;
 }
 
 /* Override Aweful Bootstrap */
+
 .tab-content>.tab-pane {
 	display: block;
 }
