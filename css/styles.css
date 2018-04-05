@@ -363,28 +363,44 @@ button,
 	height: 25vw;
 	overflow: hidden;
 	position: relative;
-	-webkit-box-shadow: 1px 1px #44166a;
-	box-shadow: 1px 1px #44166a;
+	background-color: #44166A;	
 	-webkit-transition: 0.3s;
 	-o-transition: 0.3s;
 	transition: 0.3s;
+	text-align: center;
 }
 
-@media (min-width: 1194px) {
-	.sample-wrapper:hover {
-		-webkit-box-shadow: 10px 10px #44166a;
-		box-shadow: 10px 10px #44166a;
-		-webkit-transform: scale(1.1);
-		-ms-transform: scale(1.1);
-		transform: scale(1.1);
-		-webkit-transition: 0.3s;
-		-o-transition: 0.3s;
-		transition: 0.3s;
-	}
+.sample-wrapper {
+	box-sizing: border-box;
 }
 
+.sample-wrapper:hover img {
+	opacity: 0.5;
+	transition: 0.5s;
+}
+
+.sample-wrapper i {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background-color: #44166A;
+	color: white;
+	border-radius: 50%;
+  font-size: 34px;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	transform: translate(-50%, -50%) scale(0);
+	transition: 0.3s;
+}
+
+.sample-wrapper:hover i {
+	transform: translate(-50%, -50%) scale(1);
+	transition: transform 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
 
 .sample-wrapper img {
+	transition: 0.5s;
 	width: 100%;
 	cursor: -webkit-zoom-in;
 	cursor: zoom-in;

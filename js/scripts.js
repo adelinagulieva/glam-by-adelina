@@ -1,4 +1,7 @@
 // Scrolling Navigation
+
+// Create helper function
+
 var $root = $('html, body');
 $('.navbar-nav a').click(function() {
   var href = $.attr(this, 'href');

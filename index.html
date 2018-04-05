@@ -471,37 +471,31 @@
         <a href="#tab-4" data-toggle="tab">Eastern</a>
       </li>
     </ul>
-    <div v-if="lightbox !== ''"
-         class="lightbox"
-         v-on:click="lightbox = ''">
+    <div v-if="lightbox !== ''" class="lightbox" v-on:click="lightbox = ''">
       <img v-bind:src="lightbox">
     </div>
     <div v-if="active === 'bridal'" class="sample-grid">
-      <div v-for="sample in type.bridal.samples"
-           class="sample-wrapper">
-        <img v-bind:src="sample.image"
-             v-on:click="lightbox = sample.image">
+      <div v-for="sample in type.bridal.samples" class="sample-wrapper">        
+        <img v-bind:src="sample.image" v-on:click="lightbox = sample.image">
+        <i class="fa fa-camera-retro"></i>
       </div>
     </div>
     <div v-if="active === 'makeup'" class="sample-grid">
-      <div v-for="sample in type.makeup.samples"
-           class="sample-wrapper">
-        <img v-bind:src="sample.image"
-             v-on:click="lightbox = sample.image">
+      <div v-for="sample in type.makeup.samples" class="sample-wrapper">
+        <img v-bind:src="sample.image" v-on:click="lightbox = sample.image">
+        <i class="fa fa-camera-retro"></i>
       </div>
     </div>
     <div v-if="active === 'hair'" class="sample-grid">
-      <div v-for="sample in type.hair.samples"
-           class="sample-wrapper">
-        <img v-bind:src="sample.image"
-             v-on:click="lightbox = sample.image">
+      <div v-for="sample in type.hair.samples" class="sample-wrapper">
+        <img v-bind:src="sample.image" v-on:click="lightbox = sample.image">
+        <i class="fa fa-camera-retro"></i>
       </div>
     </div>
     <div v-if="active === 'eastern'" class="sample-grid">
-      <div v-for="sample in type.eastern.samples"
-           class="sample-wrapper">
-        <img v-bind:src="sample.image"
-             v-on:click="lightbox = sample.image">
+      <div v-for="sample in type.eastern.samples" class="sample-wrapper">
+        <img v-bind:src="sample.image" v-on:click="lightbox = sample.image">
+        <i class="fa fa-camera-retro"></i>
       </div>
     </div>
     <!-- Booking Button -->
