@@ -429,7 +429,7 @@ button,
 }
 
 .clear-field {
-	background-color: rgba(0, 0, 0, 0.1);
+	background-color: rgba(68, 22, 106, 0.5);
 	width: 80%;
 	margin: 5px auto;
 	padding: 20px;
@@ -447,19 +447,18 @@ button,
 .clear-field:hover {
 	background-color: #44166a;
 	color: white;
-	opacity: 0.8;
 	-webkit-transition: 0.3s;
 	-o-transition: 0.3s;
 	transition: 0.3s;
 }
 
-.clear-field:focus {
+/* .clear-field:focus {
 	background-color: white;
 	color: #44166a;
 	-webkit-transition: 0.3s;
 	-o-transition: 0.3s;
 	transition: 0.3s;
-}
+} */
 
 /*Portfolio*/
 
