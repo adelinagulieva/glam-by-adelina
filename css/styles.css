@@ -370,16 +370,19 @@ button,
 	transition: 0.3s;
 }
 
-.sample-wrapper:hover {
-	-webkit-box-shadow: 10px 10px black;
-	box-shadow: 10px 10px black;
-	-webkit-transform: scale(1.1);
-	-ms-transform: scale(1.1);
-	transform: scale(1.1);
-	-webkit-transition: 0.3s;
-	-o-transition: 0.3s;
-	transition: 0.3s;
+@media (min-width: 1194px) {
+	.sample-wrapper:hover {
+		-webkit-box-shadow: 10px 10px #44166a;
+		box-shadow: 10px 10px #44166a;
+		-webkit-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		transform: scale(1.1);
+		-webkit-transition: 0.3s;
+		-o-transition: 0.3s;
+		transition: 0.3s;
+	}
 }
+
 
 .sample-wrapper img {
 	width: 100%;
@@ -401,7 +404,7 @@ button,
 }
 
 .lightbox img {
-	width: 80vw;
+	height: 80vh;
 	max-width: 730px;
 }
 
