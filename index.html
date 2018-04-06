@@ -608,6 +608,36 @@
           <label class="sr-only" for="input-email">
             Email Address</label>
           <input class="clear-field" type="email" id="input-email" name="_replyto" placeholder="Email address" required>
+          <br>
+
+          <div class="service-type">
+            <div @click="bridal = !bridal; event = false"
+                 v-bind:class="{ active : bridal }">
+              Bridal
+            </div>
+            <div @click="event = !event; bridal = false"
+                 v-bind:class="{ active : event }">
+              Event
+            </div>
+          </div>
+          
+          <div v-if="bridal">
+            <div id='example-3'>
+              <input type="checkbox" id="jack" value="Bridal Makeup" v-model="bridalServices">
+              <label for="bridal-makeup">Bridal Makeup</label>
+              <input type="checkbox" id="john" value="Bridal Hair" v-model="bridalServices">
+              <label for="bridal-hair">Bridal Hair</label>
+              <input type="checkbox" id="mike" value="Mike" v-model="party">
+              <label for="mike">Bridesmaids / Moms</label>
+              <br>
+              <span>Checked names: {{ bridalServices }}</span>
+            </div>
+          </div>
+
+          <div v-if="event">
+            {{ event }}
+          </div>
+          <br>
           <label class="sr-only" for="input-subject">
             Subject</label>
           <input class="clear-field" type="text" id="input-subject" name="Message" placeholder="Subject (Optional)">

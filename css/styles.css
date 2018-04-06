@@ -447,6 +447,45 @@ button,
 	color: white;
 }
 
+/* Form */
+
+.service-type {
+	display: flex;
+	list-style: none;
+	margin: 5px auto;
+	width: 80%;
+	justify-content: space-between;
+}
+
+.service-type div {
+	background-color: rgba(68, 22, 106, 0.5);
+	padding: 20px;
+	color: #757575;
+	border-radius: 10px;
+	border: 1px solid white;
+	width: 49%;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
+
+.service-type div:hover {
+	background-color: #44166A;
+	color: white;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+.service-type div.active {
+	background-color: white;
+	color: #44166A;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
+
 .clear-field {
 	background-color: rgba(68, 22, 106, 0.5);
 	width: 80%;
