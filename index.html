@@ -611,32 +611,39 @@
           <br>
 
           <div class="service-type">
-            <div @click="bridal = !bridal; event = false"
+            <div @click="bridal = true; event = false; tv = false"
                  v-bind:class="{ active : bridal }">
               Bridal
             </div>
-            <div @click="event = !event; bridal = false"
+            <div @click="event = true; bridal = false; tv = false"
                  v-bind:class="{ active : event }">
               Event
             </div>
-          </div>
-          
-          <div v-if="bridal">
-            <div id='example-3'>
-              <input type="checkbox" id="jack" value="Bridal Makeup" v-model="bridalServices">
-              <label for="bridal-makeup">Bridal Makeup</label>
-              <input type="checkbox" id="john" value="Bridal Hair" v-model="bridalServices">
-              <label for="bridal-hair">Bridal Hair</label>
-              <input type="checkbox" id="mike" value="Mike" v-model="party">
-              <label for="mike">Bridesmaids / Moms</label>
-              <br>
-              <span>Checked names: {{ bridalServices }}</span>
+            <div @click="tv = true; event = false; bridal = false"
+                 v-bind:class="{ active : tv }">
+              TV / Film
             </div>
           </div>
-
-          <div v-if="event">
-            {{ event }}
+          <div class="service-details">
+            <transition name="fade" mode="out-in">
+              <div v-if="bridal">
+                <div id='example-3'>
+                  <input type="checkbox" id="jack" value="Bridal Makeup" v-model="bridalServices">
+                  <label for="bridal-makeup">Bridal Makeup</label>
+                  <input type="checkbox" id="john" value="Bridal Hair" v-model="bridalServices">
+                  <label for="bridal-hair">Bridal Hair</label>
+                  <input type="checkbox" id="mike" value="Mike" v-model="party">
+                  <label for="mike">Bridesmaids / Moms</label>
+                  <br>
+                  <span>Checked names: {{ bridalServices }}</span>
+                </div>
+              </div>
+              <div v-if="event">
+                {{ event }}
+              </div>
+            </transition>
           </div>
+          
           <br>
           <label class="sr-only" for="input-subject">
             Subject</label>

@@ -452,13 +452,13 @@ button,
 .service-type {
 	display: flex;
 	list-style: none;
-	margin: 5px auto;
+	margin: 5px auto 0;
 	width: 80%;
 	justify-content: space-between;
 }
 
 .service-type div {
-	background-color: rgba(68, 22, 106, 0.5);
+	background-color: rgba(68, 22, 106, 0.2);
 	padding: 20px;
 	color: #757575;
 	border-radius: 10px;
@@ -470,7 +470,7 @@ button,
 }
 
 .service-type div:hover {
-	background-color: #44166A;
+	background-color: rgba(68, 22, 106, 0.5);
 	color: white;
 	-webkit-transition: 0.3s;
 	-o-transition: 0.3s;
@@ -479,11 +479,23 @@ button,
 }
 
 .service-type div.active {
-	background-color: white;
-	color: #44166A;
+	background-color: #44166A;
+	color: white;
+	border-radius: 10px 10px 0 0;
+	border-bottom: 0;
 	-webkit-transition: 0.3s;
 	-o-transition: 0.3s;
 	transition: 0.3s;
+}
+
+.service-details {
+	background-color: #44166A;
+	height: 120px;
+	width: 80%;
+	margin: auto;
+	border-radius: 0 0 10px 10px;
+	border: 1px solid white;
+	border-top: 0;
 }
 
 .clear-field {
@@ -951,4 +963,33 @@ a:hover {
 
 .tab-content>.tab-pane {
 	display: block;
+}
+
+.fade-enter {
+	height: 0;
+	opacity: 0 
+}
+
+.fade-enter-active { 
+	animation: bounce-in 1s;
+	height: 47px;
+	transition: height 1s;
+}
+
+.fade-leave-active {
+	animation: bounce-in 1s reverse;
+	opacity: 0
+	transition: opacity 1s;
+}
+
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }

@@ -186,9 +186,10 @@ new Vue({
 new Vue({
   el: '#contact',
   data: {
-    bridal: false,
-    event: false,
+    bridal:         true,
+    event:          false,
+    tv:             false,
     bridalServices: [],
-    party: false
+    party:          false
   }
 })
