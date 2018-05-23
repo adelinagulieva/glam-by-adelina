@@ -338,8 +338,8 @@ button,
 }
 
 li.sample-selector {
-	width: 22%;
 	display: flex;
+	max-width: 25%;
 }
 
 .center-pills {
