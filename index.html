@@ -474,25 +474,25 @@
     <div v-if="lightbox !== ''" class="lightbox" v-on:click="lightbox = ''">
       <img v-bind:src="lightbox">
     </div>
-    <div v-if="active === 'bridal'" class="sample-grid">
+    <div v-show="active === 'bridal'" class="sample-grid">
       <div v-for="sample in type.bridal.samples" class="sample-wrapper">        
         <img v-bind:src="sample.image" v-on:click="lightbox = sample.image">
         <i class="fa fa-camera-retro"></i>
       </div>
     </div>
-    <div v-if="active === 'makeup'" class="sample-grid">
+    <div v-show="active === 'makeup'" class="sample-grid">
       <div v-for="sample in type.makeup.samples" class="sample-wrapper">
         <img v-bind:src="sample.image" v-on:click="lightbox = sample.image">
         <i class="fa fa-camera-retro"></i>
       </div>
     </div>
-    <div v-if="active === 'hair'" class="sample-grid">
+    <div v-show="active === 'hair'" class="sample-grid">
       <div v-for="sample in type.hair.samples" class="sample-wrapper">
         <img v-bind:src="sample.image" v-on:click="lightbox = sample.image">
         <i class="fa fa-camera-retro"></i>
       </div>
     </div>
-    <div v-if="active === 'eastern'" class="sample-grid">
+    <div v-show="active === 'eastern'" class="sample-grid">
       <div v-for="sample in type.eastern.samples" class="sample-wrapper">
         <img v-bind:src="sample.image" v-on:click="lightbox = sample.image">
         <i class="fa fa-camera-retro"></i>
@@ -604,50 +604,14 @@
           <input class="clear-field" type="text" id="input-name" name="Name" placeholder="Name">
           <label class="sr-only" for="input-phone">
             Phone Number</label>
-          <input class="clear-field" type="tel" id="input-phone" name="Phone" placeholder="Phone (Optional)">
+          <input class="clear-field" type="tel" id="input-phone" name="Phone" placeholder="Phone">
           <label class="sr-only" for="input-email">
             Email Address</label>
-          <input class="clear-field" type="email" id="input-email" name="_replyto" placeholder="Email address" required>
-          <br>
-
-          <div class="service-type">
-            <div @click="bridal = true; event = false; tv = false"
-                 v-bind:class="{ active : bridal }">
-              Bridal
-            </div>
-            <div @click="event = true; bridal = false; tv = false"
-                 v-bind:class="{ active : event }">
-              Event
-            </div>
-            <div @click="tv = true; event = false; bridal = false"
-                 v-bind:class="{ active : tv }">
-              TV / Film
-            </div>
-          </div>
-          <div class="service-details">
-            <transition name="fade" mode="out-in">
-              <div v-if="bridal">
-                <div id='example-3'>
-                  <input type="checkbox" id="jack" value="Bridal Makeup" v-model="bridalServices">
-                  <label for="bridal-makeup">Bridal Makeup</label>
-                  <input type="checkbox" id="john" value="Bridal Hair" v-model="bridalServices">
-                  <label for="bridal-hair">Bridal Hair</label>
-                  <input type="checkbox" id="mike" value="Mike" v-model="party">
-                  <label for="mike">Bridesmaids / Moms</label>
-                  <br>
-                  <span>Checked names: {{ bridalServices }}</span>
-                </div>
-              </div>
-              <div v-if="event">
-                {{ event }}
-              </div>
-            </transition>
-          </div>
-          
+          <input class="clear-field" type="email" id="input-email" name="_replyto" placeholder="Email" required>
           <br>
           <label class="sr-only" for="input-subject">
-            Subject</label>
-          <input class="clear-field" type="text" id="input-subject" name="Message" placeholder="Subject (Optional)">
+            Wedding, Photoshoot, or Other Service Type</label>
+          <input class="clear-field" type="text" id="input-subject" name="Message" placeholder="Service Type">
           <label class="sr-only" for="input-message">
             Message</label>
           <textarea class="clear-field" cols="40" rows="5" name="message" id="input-message" placeholder="Message"></textarea>

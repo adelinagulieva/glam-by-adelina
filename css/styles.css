@@ -358,12 +358,14 @@ button,
 }
 
 .sample-wrapper {
-	margin-top: 5vw;
+	margin-top: 11px;
 	width: 25vw;
+	max-width: 150px;
 	height: 25vw;
+	max-height: 150px;
 	overflow: hidden;
 	position: relative;
-	background-color: #44166A;	
+	background-color: #44166A;
 	-webkit-transition: 0.3s;
 	-o-transition: 0.3s;
 	transition: 0.3s;
@@ -614,7 +616,10 @@ body.touch .boxInner.touchFocus .titleBox {
 
 @media (max-width: 767px) {
 	.gray-overlay {
-		height: 130vh;
+		height: 100vh;
+	}
+	.contact .gray-overlay {
+		height: 150vh;
 	}
 	.contact {
 		background-attachment: scroll;
@@ -978,7 +983,7 @@ a:hover {
 
 .fade-leave-active {
 	animation: bounce-in 1s reverse;
-	opacity: 0
+	opacity: 0;
 	transition: opacity 1s;
 }
 
