@@ -337,6 +337,11 @@ button,
 	color: white;
 }
 
+li.sample-selector {
+	width: 22%;
+	display: flex;
+}
+
 .center-pills {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -349,6 +354,8 @@ button,
 .sample-grid {
 	display: -webkit-box;
 	display: -ms-flexbox;
+	max-width: 1000px;
+	margin: auto;
 	display: flex;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;

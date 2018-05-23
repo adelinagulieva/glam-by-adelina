@@ -42,9 +42,9 @@ new Vue({
           {
             image: 'img/bridal/bride12.jpg'
           },
-          {
-            image: 'img/bridal/bride13.jpg'
-          }
+          // {
+          //   image: 'img/bridal/bride13.jpg'
+          // }
         ],
       },
       makeup: {
@@ -85,18 +85,18 @@ new Vue({
           {
             image: 'img/makeup/makeup12.jpg'
           },
-          {
-            image: 'img/makeup/makeup13.jpg'
-          },
-          {
-            image: 'img/makeup/makeup14.jpg'
-          },
-          {
-            image: 'img/makeup/makeup15.jpg'
-          },
-          {
-            image: 'img/makeup/makeup16.jpg'
-          }
+          // {
+          //   image: 'img/makeup/makeup13.jpg'
+          // },
+          // {
+          //   image: 'img/makeup/makeup14.jpg'
+          // },
+          // {
+          //   image: 'img/makeup/makeup15.jpg'
+          // },
+          // {
+          //   image: 'img/makeup/makeup16.jpg'
+          // }
         ]
       },
       hair: {
