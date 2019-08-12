@@ -667,8 +667,23 @@ footer {
 	min-height: 70px;
 	background-color: #db95a1;
 	color: white;
-	padding-top: 20px;
-	padding-left: 5%;
+	padding: 20px 10%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+footer a {
+	color: white;
+	font-size: 48px;
+}
+
+.fa-instagram:hover, .fa-instagram:focus, .fa-instagram:active {
+	color: yellow;
+}
+
+.fa-yelp:hover, .fa-yelp:focus, .fa-yelp:active {
+	color: red;
 }
 
 /*Override*/
