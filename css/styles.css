@@ -38,18 +38,6 @@ button,
 	min-height: 100vh;
 }
 
-#logo {
-	font-family: 'Dosis', sans-serif;
-	color: white;
-	padding-top: 22px;
-}
-
-#logo img {
-	width: 248px;
-	margin-top: -7px;
-	margin-left: -7px;
-}
-
 .row {
 	max-width: 100vw;
 }
@@ -93,7 +81,7 @@ button,
 
 .navbar {
 	min-height: 70px;
-	background-color: #44166a;
+	background-color: white;
 }
 
 .navbar-fixed-top .navbar-collapse {
@@ -120,9 +108,18 @@ button,
 	padding: 0;
 }
 
-.icon-bar {
+.navbar-inverse .navbar-toggle .icon-bar {
 	margin-top: 3px;
 	margin-bottom: 3px;
+	background-color: #9d9d9d;
+}
+
+.navbar-brand {
+	width: 190px;
+}
+
+.navbar-inverse {
+	border: none;
 }
 
 .navbar-inverse .navbar-nav>.active>a,
@@ -133,14 +130,39 @@ button,
 	border: 1px solid #44166a;
 }
 
+.navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:hover {
+	color: pink;
+	background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+	color: pink;
+}
+
 .navbar-inverse .navbar-toggle {
 	margin-top: 13px;
-	border-color: white;
+	border-color: #9d9d9d;
+}
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+	background-color: pink;
 }
 
 .feature a {
 	text-decoration: none;
 	color: white;
+}
+
+#top-logo {
+	color: black;
+	font-size: 20px;
+}
+
+#bottom-logo {
+	color: rosybrown;
+	font-size: 16px;
+	font-family: cursive;
+	float: right;
 }
 
 /*Landing*/
