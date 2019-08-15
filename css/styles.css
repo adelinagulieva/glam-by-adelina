@@ -349,8 +349,11 @@ slideShow {  0% {
 }
 }
 @media (max-width: 768px) {
+	.pic-wrapper {
+		display: none;
+	}
 	.jumbotron {
-		background: white;
+		background-image: url(../img/slides/phone.jpg);
 		background-position: center;
 		background-attachment: scroll;
 	}
