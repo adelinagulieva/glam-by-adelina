@@ -379,7 +379,7 @@ slideShow {  0% {
 	.jumbotron h1 {
 		font-size: 40px;
 	}
-	.social-media a i {
+	.social-media a i {x
 		color: white;
 		font-size: 80px;
 		margin-right: 2vw;
@@ -819,7 +819,7 @@ body.touch .boxInner.touchFocus .titleBox {
 	background-position: center;
 	background-attachment: fixed;
 	min-height: 100vh;
-	padding-bottom: 70px;
+	padding-bottom: 140px;
 }
 
 @media (max-width: 767px) {
