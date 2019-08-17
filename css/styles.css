@@ -819,7 +819,7 @@ body.touch .boxInner.touchFocus .titleBox {
 	background-position: center;
 	background-attachment: fixed;
 	min-height: 100vh;
-	padding-bottom: 140px;
+	padding-bottom: 160px;
 }
 
 @media (max-width: 767px) {
