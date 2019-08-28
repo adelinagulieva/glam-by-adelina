@@ -348,9 +348,15 @@ slideShow {  0% {
  -webkit-transformm:scale(1);
 }
 }
+.mobile-landing {
+	display: none;
+}
 @media (max-width: 768px) {
 	.pic-wrapper {
 		display: none;
+	}
+	.mobile-landing {
+		display: block;
 	}
 	.jumbotron {
 		background-image: url(../img/slides/phone.jpg);
