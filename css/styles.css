@@ -356,12 +356,26 @@ slideShow {  0% {
 		display: none;
 	}
 	.mobile-landing {
-		display: block;
+		width: 100%;
+		height: 50vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+	}
+	.social-media-row {
+		width: 70%;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
 	}
 	.jumbotron {
 		background-image: url(../img/slides/phone.jpg);
 		background-position: center;
 		background-attachment: scroll;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 	.jumbotron h1 {
 		font-size: 30px;
@@ -852,7 +866,7 @@ footer {
 	align-items: center;
 }
 
-footer a {
+footer a, .mobile-landing i {
 	color: white;
 	font-size: 48px;
 }
@@ -863,6 +877,10 @@ footer a {
 
 .fa-yelp:hover, .fa-yelp:focus, .fa-yelp:active {
 	color: red;
+}
+
+.fa-facebook-square:hover, .fa-yelp:focus, .fa-yelp:active {
+	color: blue;
 }
 
 /*Override*/
