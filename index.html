@@ -202,27 +202,35 @@
       <img v-bind:src="lightbox">
     </div>
     <div v-show="active === 'bridal'" class="sample-grid">
-      <div v-for="sample in type.bridal.samples" class="sample-wrapper">        
-        <img v-bind:src="sample.image" v-on:click="lightbox = sample.image">
-        <i class="fa fa-camera-retro"></i>
+      <div v-for="sample in type.bridal.samples" class="sample-wrapper">
+        <div v-on:click="lightbox = sample.image">
+          <img v-bind:src="sample.image">
+          <i class="fa fa-camera-retro"></i>
+        </div>
       </div>
     </div>
     <div v-show="active === 'makeup'" class="sample-grid">
       <div v-for="sample in type.makeup.samples" class="sample-wrapper">
-        <img v-bind:src="sample.image" v-on:click="lightbox = sample.image">
-        <i class="fa fa-camera-retro"></i>
+        <div v-on:click="lightbox = sample.image">
+          <img v-bind:src="sample.image">
+          <i class="fa fa-camera-retro"></i>
+        </div>
       </div>
     </div>
     <div v-show="active === 'hair'" class="sample-grid">
       <div v-for="sample in type.hair.samples" class="sample-wrapper">
-        <img v-bind:src="sample.image" v-on:click="lightbox = sample.image">
-        <i class="fa fa-camera-retro"></i>
+        <div v-on:click="lightbox = sample.image">
+          <img v-bind:src="sample.image">
+          <i class="fa fa-camera-retro"></i>
+        </div>
       </div>
     </div>
     <div v-show="active === 'eastern'" class="sample-grid">
       <div v-for="sample in type.eastern.samples" class="sample-wrapper">
-        <img v-bind:src="sample.image" v-on:click="lightbox = sample.image">
-        <i class="fa fa-camera-retro"></i>
+        <div v-on:click="lightbox = sample.image">
+          <img v-bind:src="sample.image">
+          <i class="fa fa-camera-retro"></i>
+        </div>
       </div>
     </div>
     <!-- Booking Button -->
