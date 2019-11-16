@@ -202,27 +202,35 @@
       <img v-bind:src="lightbox">
     </div>
     <div v-show="active === 'bridal'" class="sample-grid">
-      <div v-for="sample in type.bridal.samples" class="sample-wrapper">        
-        <img v-bind:src="sample.image" v-on:click="lightbox = sample.image">
-        <i class="fa fa-camera-retro"></i>
+      <div v-for="sample in type.bridal.samples" class="sample-wrapper">
+        <div v-on:click="lightbox = sample.image">
+          <img v-bind:src="sample.image">
+          <i class="fa fa-camera-retro"></i>
+        </div>
       </div>
     </div>
     <div v-show="active === 'makeup'" class="sample-grid">
       <div v-for="sample in type.makeup.samples" class="sample-wrapper">
-        <img v-bind:src="sample.image" v-on:click="lightbox = sample.image">
-        <i class="fa fa-camera-retro"></i>
+        <div v-on:click="lightbox = sample.image">
+          <img v-bind:src="sample.image">
+          <i class="fa fa-camera-retro"></i>
+        </div>
       </div>
     </div>
     <div v-show="active === 'hair'" class="sample-grid">
       <div v-for="sample in type.hair.samples" class="sample-wrapper">
-        <img v-bind:src="sample.image" v-on:click="lightbox = sample.image">
-        <i class="fa fa-camera-retro"></i>
+        <div v-on:click="lightbox = sample.image">
+          <img v-bind:src="sample.image">
+          <i class="fa fa-camera-retro"></i>
+        </div>
       </div>
     </div>
     <div v-show="active === 'eastern'" class="sample-grid">
       <div v-for="sample in type.eastern.samples" class="sample-wrapper">
-        <img v-bind:src="sample.image" v-on:click="lightbox = sample.image">
-        <i class="fa fa-camera-retro"></i>
+        <div v-on:click="lightbox = sample.image">
+          <img v-bind:src="sample.image">
+          <i class="fa fa-camera-retro"></i>
+        </div>
       </div>
     </div>
     <!-- Booking Button -->
@@ -290,8 +298,6 @@
   <div class="container-fluid section-image contact text-center" id="contact">
     <div class="anchor">
       <div class="row">
-        <!-- When Netlify works:
-        <form action="https://formspree.io/adelina@beautyinsf.com" method="POST" class="col-xs-12 col-sm-7 col-sm-offset-5"> -->
         <form method="POST" class="col-xs-12 col-sm-7 col-sm-offset-5" netlify>
           <h1>Contact</h1>
           <label class="sr-only" for="input-name">
