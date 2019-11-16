@@ -1245,3 +1245,15 @@ a:hover {
     transform: scale(1);
   }
 }
+
+.thumbnail-image {
+	height: 350px;
+	width: 350px;
+	overflow: hidden;
+}
+
+#blog3 {
+	background-image: url("../img/blog3/blog3.jpg");
+	width: 350px;
+	margin-top: 100px;
+}
